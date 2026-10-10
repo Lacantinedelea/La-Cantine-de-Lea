@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light only">
+<meta name="supported-color-schemes" content="light">
+<meta name="theme-color" content="#16352A">
+<title>La Cantine de Léa — Vos repas de la semaine, cuisinés à la main à Toulouse</title>
+<meta name="description" content="Des plats faits maison à récupérer le week-end à Toulouse. Huit plats à l'honneur chaque semaine, composés selon vos goûts, de 6,50 € à 10,00 € le plat complet.">
+<link rel="canonical" href="https://lacantinedelea.fr/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="La Cantine de Léa">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://lacantinedelea.fr/">
+<meta property="og:title" content="La Cantine de Léa — La cuisine maison, tout simplement">
+<meta property="og:description" content="Des plats faits maison à récupérer le week-end à Toulouse. Huit plats à l'honneur chaque semaine, à partir de 6,50 € le plat complet.">
+<meta property="og:image" content="https://lacantinedelea.fr/partage.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Un bol de poulet au thym et semoule, avec le nom La Cantine de Léa">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="La Cantine de Léa — La cuisine maison, tout simplement">
+<meta name="twitter:description" content="Des plats faits maison à récupérer le week-end à Toulouse. Huit plats à l'honneur chaque semaine.">
+<meta name="twitter:image" content="https://lacantinedelea.fr/partage.jpg">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="La Cantine">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Karla:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme: only light;
+  --vert:#16352A;
+  --vert-fonce:#0E241C;
+  --vert-clair:#24503F;
+  --curry:#E9B23C;
+  --tomate:#C1462C;
+  --porcelaine:#F6F1E6;
+  --porcelaine-2:#EDE6D6;
+  --encre:#211F1A;
+  --encre-doux:#5A5347;
+  --display:"Instrument Serif",Georgia,serif;
+  --corps:"Karla",system-ui,sans-serif;
+  --mono:"DM Mono",ui-monospace,monospace;
+  --max:1180px;
+}
+*{box-sizing:border-box}
+html{background:#F6F1E6;color-scheme:only light}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--porcelaine);color:var(--encre);
+  font-family:var(--corps);font-size:17px;line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding-left:26px;padding-right:26px}
+
+/* ---------- utilitaires ---------- */
+.eyebrow{
+  font-family:var(--mono);font-size:12px;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--tomate);margin:0 0 18px;
+}
+.eyebrow.pale{color:var(--curry)}
+h2.titre{
+  font-family:var(--display);font-weight:400;
+  font-size:clamp(32px,5.2vw,54px);line-height:1.04;letter-spacing:-.01em;margin:0 0 16px;
+}
+h2.titre em{font-style:italic;color:var(--tomate)}
+.chapo{max-width:56ch;color:var(--encre-doux);margin:0 0 40px}
+
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:15px 26px;border-radius:999px;text-decoration:none;
+  font-weight:700;font-size:16px;border:2px solid transparent;
+  transition:transform .18s ease, background .18s ease, color .18s ease;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn-curry{background:var(--curry);color:var(--vert-fonce)}
+.btn-curry:hover{background:#F3C258}
+.btn-ligne{border-color:currentColor}
+.btn-ligne:hover{background:var(--curry);border-color:var(--curry);color:var(--vert-fonce)}
+.btn-vert{background:var(--vert);color:var(--porcelaine)}
+
+/* ---------- header ---------- */
+header{
+  position:sticky;top:0;z-index:50;background:var(--vert);color:var(--porcelaine);
+  border-bottom:1px solid rgba(246,241,230,.14);
+}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:16px;height:66px}
+.marque{font-family:var(--display);font-size:23px;text-decoration:none;letter-spacing:.01em}
+.marque span{color:var(--curry)}
+.nav{display:flex;align-items:center;gap:28px}
+.nav a{
+  font-size:14.5px;text-decoration:none;font-weight:500;opacity:.85;
+}
+.nav a:hover{opacity:1;color:var(--curry)}
+.nav .btn{padding:10px 20px;font-size:14.5px}
+@media(max-width:900px){.nav a:not(.btn){display:none}}
+
+.gauche{display:flex;align-items:center;gap:14px}
+.burger{
+  width:38px;height:38px;border:none;background:transparent;cursor:pointer;padding:0;
+  display:flex;flex-direction:column;justify-content:center;align-items:center;gap:5px;
+  border-radius:6px;transition:background .15s ease;
+}
+.burger:hover{background:rgba(246,241,230,.1)}
+.burger span{
+  display:block;width:21px;height:2px;background:var(--curry);border-radius:2px;
+  transition:transform .22s ease,opacity .18s ease;
+}
+.burger.ouvert span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.burger.ouvert span:nth-child(2){opacity:0}
+.burger.ouvert span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+.voile-menu{
+  position:fixed;inset:0;background:rgba(14,36,28,.5);z-index:80;
+  opacity:0;pointer-events:none;transition:opacity .3s ease;
+}
+.voile-menu.ouvert{opacity:1;pointer-events:auto}
+
+.deroulant{
+  position:fixed;top:0;left:0;bottom:0;z-index:95;
+  width:320px;max-width:84vw;
+  background:var(--vert-fonce);border-right:1px solid rgba(246,241,230,.14);
+  display:flex;flex-direction:column;
+  transform:translateX(-100%);transition:transform .32s cubic-bezier(.4,0,.2,1);
+  box-shadow:14px 0 44px rgba(0,0,0,.3);
+  padding:22px 0 26px;
+}
+.deroulant.ouvert{transform:none}
+.deroulant-tete{
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+  padding:0 24px 22px;border-bottom:1px solid rgba(246,241,230,.14);
+}
+.deroulant-tete .marque{font-size:20px;color:var(--porcelaine)}
+.fermer-menu{
+  background:none;border:none;color:var(--porcelaine);opacity:.7;
+  font-size:30px;line-height:1;cursor:pointer;padding:0 4px;
+}
+.fermer-menu:hover{opacity:1;color:var(--curry)}
+.deroulant-liens{flex:1;padding:14px 0}
+.deroulant-liens a{
+  display:flex;align-items:baseline;gap:14px;
+  padding:16px 24px;text-decoration:none;color:var(--porcelaine);
+  font-family:var(--display);font-size:30px;line-height:1.1;
+  transition:background .15s ease,color .15s ease;
+}
+.deroulant-liens a em{
+  font-family:var(--mono);font-style:normal;font-size:11px;
+  letter-spacing:.14em;color:var(--curry);opacity:.75;
+}
+.deroulant-liens a:hover{background:rgba(233,178,60,.12);color:var(--curry)}
+.deroulant-pied{
+  padding:22px 24px 0;border-top:1px solid rgba(246,241,230,.14);
+  font-size:14px;color:rgba(246,241,230,.62);
+}
+.deroulant-pied p{margin:0 0 12px;line-height:1.5}
+.deroulant-pied a{display:block;color:var(--curry);text-decoration:none;margin-bottom:6px;font-size:14px}
+
+/* ---------- hero ---------- */
+.hero{background:var(--vert);color:var(--porcelaine);overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding-top:44px;padding-bottom:48px}
+.hero h1{
+  font-family:var(--display);font-weight:400;
+  font-size:clamp(40px,5.6vw,64px);line-height:1;letter-spacing:-.015em;margin:0 0 18px;
+}
+.hero h1 em{font-style:italic;color:var(--curry)}
+.hero p.sous{font-size:18px;color:rgba(246,241,230,.82);max-width:46ch;margin:0 0 26px}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px}
+.hero-photo{position:relative}
+.hero-photo img{
+  width:100%;aspect-ratio:1/1;max-height:440px;object-fit:cover;border-radius:6px;
+}
+.tampon{
+  position:absolute;left:-26px;bottom:34px;
+  background:var(--curry);color:var(--vert-fonce);
+  padding:16px 20px;border-radius:4px;transform:rotate(-4deg);
+  font-family:var(--mono);font-size:12.5px;letter-spacing:.06em;line-height:1.35;
+  box-shadow:0 12px 30px rgba(0,0,0,.22);
+}
+.tampon b{display:block;font-family:var(--display);font-size:30px;letter-spacing:0;font-weight:400}
+@media(max-width:860px){
+  .hero-grid{grid-template-columns:1fr;gap:36px;padding:48px 0 44px}
+  .hero-photo{order:-1}
+  .hero-photo img{aspect-ratio:5/4}
+  .tampon{left:auto;right:14px;bottom:-18px}
+}
+
+/* ---------- bandeau réassurance ---------- */
+.reassurance{background:var(--vert-fonce);color:var(--porcelaine)}
+.reassurance ul{
+  list-style:none;margin:0;padding:20px 0;display:grid;
+  grid-template-columns:repeat(4,1fr);gap:10px;
+}
+.reassurance li{
+  font-family:var(--mono);font-size:12.5px;letter-spacing:.05em;
+  text-transform:uppercase;text-align:center;color:rgba(246,241,230,.8);
+}
+.reassurance li::before{content:"◆ ";color:var(--curry)}
+@media(max-width:760px){.reassurance ul{grid-template-columns:repeat(2,1fr);text-align:left}}
+
+/* ---------- arguments ---------- */
+.args{padding-top:86px;padding-bottom:70px}
+.args-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:48px}
+.arg h3{font-family:var(--display);font-weight:400;font-size:27px;margin:0 0 10px;line-height:1.15}
+.arg p{margin:0;color:var(--encre-doux);font-size:16px}
+.arg .num{
+  font-family:var(--mono);font-size:12px;color:var(--tomate);
+  display:block;margin-bottom:14px;padding-bottom:14px;border-bottom:1px solid var(--porcelaine-2);
+  letter-spacing:.14em;
+}
+@media(max-width:820px){.args{padding-top:56px;padding-bottom:44px}.args-grid{grid-template-columns:1fr;gap:30px}}
+
+/* ---------- best-sellers ---------- */
+.stars{padding-top:76px;padding-bottom:88px}
+.stars-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:36px}
+.cartes{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.carte{background:#fff;border-radius:6px;overflow:hidden;box-shadow:0 1px 0 var(--porcelaine-2)}
+.carte figure{margin:0;overflow:hidden}
+.carte img{width:100%;aspect-ratio:1/1;object-fit:cover;transition:transform .5s ease}
+.carte:hover img{transform:scale(1.05)}
+.carte-txt{padding:20px 22px 24px}
+.carte-titre{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin-bottom:8px}
+.carte-titre h3{font-family:var(--display);font-weight:400;font-size:24px;margin:0;line-height:1.1}
+.carte-titre .p{font-family:var(--mono);font-size:15px;color:var(--tomate);white-space:nowrap}
+.carte p.ing{margin:0;font-size:14.5px;color:var(--encre-doux);line-height:1.5}
+.badge{
+  display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.1em;
+  text-transform:uppercase;background:var(--vert);color:var(--curry);
+  padding:5px 10px;border-radius:3px;margin-bottom:12px;
+}
+@media(max-width:900px){.cartes{grid-template-columns:1fr}.stars{padding-bottom:60px}.stars-head{flex-direction:column;align-items:flex-start}}
+
+/* ---------- ardoise / menu ---------- */
+.ardoise{background:var(--vert);color:var(--porcelaine);padding:88px 0 96px}
+.ardoise .chapo{color:rgba(246,241,230,.72)}
+.ardoise h2.titre em{color:var(--curry)}
+.tabs{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:44px}
+.tab{flex:0 0 auto;white-space:nowrap}
+.tab{
+  font-family:var(--mono);font-size:13px;letter-spacing:.06em;text-transform:uppercase;
+  background:transparent;color:rgba(246,241,230,.75);cursor:pointer;
+  border:1px solid rgba(246,241,230,.3);padding:11px 18px;border-radius:999px;
+  transition:all .18s ease;
+}
+.tab:hover{color:var(--porcelaine);border-color:var(--curry)}
+.tab[aria-selected="true"]{background:var(--curry);color:var(--vert-fonce);border-color:var(--curry);font-weight:500}
+.panneau[hidden]{display:none}
+.plats{list-style:none;margin:0;padding:0;columns:2;column-gap:64px}
+.plat{break-inside:avoid;margin:0 0 22px;padding:0}
+.plat-ligne{display:flex;align-items:baseline;gap:8px}
+.plat-nom{font-size:17.5px;font-weight:600}
+.pointille{flex:1;border-bottom:1px dotted rgba(246,241,230,.38);transform:translateY(-4px)}
+.plat-prix{font-family:var(--mono);font-size:15px;color:var(--curry)}
+.plat-ing{margin:3px 0 0;font-size:14px;color:rgba(246,241,230,.6);max-width:46ch}
+@media(max-width:820px){.ardoise{padding:60px 0 66px}.plats{columns:1}}
+
+/* ---------- étapes ---------- */
+.etapes{padding-top:88px;padding-bottom:88px}
+.etapes-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;margin-top:44px}
+@media(max-width:1000px){.etapes-grid{grid-template-columns:1fr 1fr}}
+.etape{border-top:2px solid var(--vert);padding-top:20px}
+.etape .n{font-family:var(--mono);font-size:13px;color:var(--tomate);letter-spacing:.14em;display:block;margin-bottom:12px}
+.etape h3{font-family:var(--display);font-weight:400;font-size:26px;margin:0 0 8px;line-height:1.15}
+.etape p{margin:0;color:var(--encre-doux);font-size:16px}
+@media(max-width:820px){.etapes{padding-top:56px;padding-bottom:56px}.etapes-grid{grid-template-columns:1fr;gap:26px;margin-top:32px}}
+
+/* ---------- histoire ---------- */
+.histoire{background:var(--porcelaine-2);padding:88px 0}
+.histoire-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:60px;align-items:center}
+.histoire img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:6px}
+.histoire p{color:var(--encre-doux);max-width:56ch}
+blockquote.citation{
+  font-family:var(--display);font-size:clamp(24px,3.1vw,33px);line-height:1.22;
+  color:var(--encre);margin:30px 0;padding-left:22px;border-left:3px solid var(--tomate);
+}
+.signature{font-family:var(--display);font-size:26px;margin-top:26px}
+.signature span{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--encre-doux);margin-top:4px}
+@media(max-width:860px){.histoire{padding:56px 0}.histoire-grid{grid-template-columns:1fr;gap:32px}.histoire img{aspect-ratio:4/3}}
+
+.histoire .final-phrase{
+  font-family:var(--display);font-size:26px;color:var(--tomate);
+  margin-top:22px;line-height:1.2;
+}
+@media(max-width:640px){.histoire .final-phrase{font-size:22px}}
+
+/* ---------- preuve ---------- */
+.preuve{padding-top:88px;padding-bottom:88px}
+.mosaique{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:38px 0 0}
+.mosaique img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:4px;transition:opacity .3s ease}
+.mosaique a:hover img{opacity:.82}
+@media(max-width:820px){.preuve{padding-top:56px;padding-bottom:56px}.mosaique{grid-template-columns:repeat(2,1fr)}}
+
+/* ---------- CTA final ---------- */
+.final{background:var(--vert-fonce);color:var(--porcelaine);padding:92px 0}
+.final-grid{display:grid;grid-template-columns:1fr;max-width:640px}
+.final h2{font-family:var(--display);font-weight:400;font-size:clamp(34px,5vw,56px);line-height:1.03;margin:0 0 18px}
+.final h2 em{font-style:italic;color:var(--curry)}
+.final p{color:rgba(246,241,230,.78);max-width:46ch;margin:0 0 30px}
+.infos{list-style:none;margin:0;padding:0;border-top:1px solid rgba(246,241,230,.2)}
+.infos li{padding:18px 0;border-bottom:1px solid rgba(246,241,230,.2);display:flex;gap:18px;align-items:baseline}
+.infos dt,.infos .lab{
+  font-family:var(--mono);font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--curry);min-width:104px;
+}
+.infos .val{font-size:16px}
+.infos a{color:var(--porcelaine)}
+@media(max-width:860px){.final{padding:60px 0 70px}}
+
+/* ---------- formulaire ---------- */
+.commande{background:var(--porcelaine-2);padding:88px 0 96px}
+.form-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:start}
+.form-carte{background:#fff;border-radius:8px;padding:36px 34px;box-shadow:0 2px 24px rgba(33,31,26,.07)}
+.champ{margin-bottom:22px}
+.champ label,.legende{
+  display:block;font-family:var(--mono);font-size:11.5px;letter-spacing:.11em;
+  text-transform:uppercase;color:var(--encre-doux);margin-bottom:8px;
+}
+.champ label .req,.legende .req{color:var(--tomate)}
+.champ input[type=text],.champ input[type=email],.champ input[type=tel],.champ input[type=number],.champ select,.champ textarea{
+  width:100%;padding:13px 14px;border:1px solid #D8CFBB;border-radius:5px;
+  font-family:var(--corps);font-size:16px;color:var(--encre);background:var(--porcelaine);
+}
+.champ textarea{min-height:110px;resize:vertical;line-height:1.5}
+.champ input:focus,.champ select:focus,.champ textarea:focus{border-color:var(--vert);outline:none;box-shadow:0 0 0 3px rgba(22,53,42,.12)}
+.aide{font-size:13.5px;color:var(--encre-doux);margin:7px 0 0}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.choix{display:flex;flex-wrap:wrap;gap:8px}
+.choix label{
+  font-family:var(--corps);font-size:15px;letter-spacing:0;text-transform:none;
+  border:1px solid #D8CFBB;border-radius:999px;padding:9px 16px;cursor:pointer;
+  margin:0;color:var(--encre);transition:all .15s ease;
+}
+.choix input{position:absolute;opacity:0;width:0;height:0}
+.choix input:checked + span{color:var(--vert-fonce)}
+.choix label:has(input:checked){background:var(--curry);border-color:var(--curry);font-weight:600}
+.choix label:has(input:focus-visible){outline:3px solid var(--vert);outline-offset:2px}
+.paiement{
+  background:var(--vert);color:var(--porcelaine);border-radius:8px;padding:30px 28px;margin-bottom:20px;
+}
+.paiement h3{font-family:var(--display);font-weight:400;font-size:25px;margin:0 0 12px;line-height:1.15}
+.paiement p{margin:0 0 14px;font-size:15.5px;color:rgba(246,241,230,.78)}
+.paiement p:last-child{margin-bottom:0}
+.paiement .cle{color:var(--curry);font-weight:600}
+.recap{border-top:1px solid #D8CFBB;padding-top:22px;margin-top:6px}
+.envoi{width:100%;justify-content:center;border:none;cursor:pointer;font-family:var(--corps)}
+.mention{font-size:13px;color:var(--encre-doux);margin:14px 0 0;text-align:center}
+@media(max-width:900px){
+  .commande{padding:56px 0 66px}
+  .form-grid{grid-template-columns:1fr;gap:30px}
+  .form-carte{padding:26px 20px}
+  .duo{grid-template-columns:1fr}
+}
+
+/* ---------- footer ---------- */
+footer{background:var(--vert);color:rgba(246,241,230,.66);padding:56px 0 96px;font-size:14.5px}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px;align-items:start}
+.foot-col p{margin:0 0 12px;line-height:1.6}
+.foot-col p:last-child{margin-bottom:0}
+.foot-col .marque{display:block;font-size:22px;color:var(--porcelaine);margin-bottom:14px}
+.foot-tit{
+  font-family:var(--mono);font-size:11px;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--curry);margin-bottom:14px !important;
+}
+footer a{color:rgba(246,241,230,.66);text-decoration:none}
+footer a:hover{color:var(--curry)}
+.socials{display:flex;gap:10px;margin-bottom:16px}
+.social{
+  width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  border:1px solid rgba(246,241,230,.28);transition:all .18s ease;
+}
+.social svg{width:20px;height:20px;fill:none;stroke:var(--porcelaine);stroke-width:1.6;
+  stroke-linecap:round;stroke-linejoin:round;transition:stroke .18s ease}
+.social svg .plein{fill:var(--porcelaine);stroke:none;transition:fill .18s ease}
+.social:hover{background:var(--curry);border-color:var(--curry)}
+.social:hover svg{stroke:var(--vert-fonce)}
+.social:hover svg .plein{fill:var(--vert-fonce)}
+.foot-bas{
+  display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;
+  margin-top:44px;padding-top:22px;border-top:1px solid rgba(246,241,230,.16);
+  font-size:13px;color:rgba(246,241,230,.45);
+}
+@media(min-width:761px){footer{padding-bottom:56px}}
+@media(max-width:860px){.foot-grid{grid-template-columns:1fr 1fr;gap:32px}}
+@media(max-width:560px){.foot-grid{grid-template-columns:1fr;gap:28px}}
+
+/* ---------- barre mobile ---------- */
+.mobile-cta{
+  position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;
+  padding:12px 16px calc(12px + env(safe-area-inset-bottom));
+  background:rgba(14,36,28,.96);backdrop-filter:blur(8px);
+  border-top:1px solid rgba(246,241,230,.15);
+}
+.mobile-cta .btn{width:100%;justify-content:center}
+@media(max-width:760px){.mobile-cta{display:block}}
+
+/* ---------- apparition ---------- */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.reveal.vu{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+  .btn:hover,.carte:hover img{transform:none}
+}
+:focus-visible{outline:3px solid var(--curry);outline-offset:3px}
+
+/* ---------- verrou mode sombre iOS/Android ---------- */
+@media (prefers-color-scheme: dark){
+  html,body{background:var(--porcelaine);color:var(--encre)}
+  .args,.stars,.etapes,.preuve{background:var(--porcelaine)}
+  .histoire,.commande{background:var(--porcelaine-2)}
+  .hero,.ardoise,header,footer{background:var(--vert);color:var(--porcelaine)}
+  .reassurance,.final{background:var(--vert-fonce);color:var(--porcelaine)}
+  .carte,.form-carte{background:#fff}
+  h2.titre,.arg h3,.etape h3,.carte-titre h3,blockquote.citation,.signature{color:var(--encre)}
+  .ardoise h2.titre,.hero h1,.final h2{color:var(--porcelaine)}
+  .arg p,.etape p,.carte p.ing,.chapo,.histoire p,.aide,.mention{color:var(--encre-doux)}
+  .champ input,.champ select,.champ textarea{background:var(--porcelaine);color:var(--encre);-webkit-text-fill-color:var(--encre)}
+  .champ input::placeholder,.champ textarea::placeholder{color:#9A9285;-webkit-text-fill-color:#9A9285}
+  .choix label{color:var(--encre)}
+  .paiement{background:var(--vert);color:var(--porcelaine)}
+  .paiement p{color:rgba(246,241,230,.78)}
+  .infos .val{color:inherit}
+}
+
+/* ---------- menu déroulant ---------- */
+(function(){
+  var b=document.getElementById('burger'), m=document.getElementById('deroulant');
+  var v=document.getElementById('voile-menu');
+  function etat(o){
+    m.classList.toggle('ouvert',o);
+    v.classList.toggle('ouvert',o);
+    b.classList.toggle('ouvert',o);
+    b.setAttribute('aria-expanded',o?'true':'false');
+    m.setAttribute('aria-hidden',o?'false':'true');
+    document.body.style.overflow = o ? 'hidden' : '';
+  }
+  v.addEventListener('click',function(){etat(false);});
+  document.getElementById('fermer-menu').addEventListener('click',function(){etat(false);});
+  b.addEventListener('click',function(e){
+    e.stopPropagation();
+    etat(!m.classList.contains('ouvert'));
+  });
+  m.querySelectorAll('a').forEach(function(a){ a.addEventListener('click',function(){etat(false);}); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') etat(false); });
+})();
+
+.alg{display:flex;flex-wrap:wrap;gap:5px;margin-top:7px}
+.alg span{
+  font-family:var(--mono);font-size:9.5px;letter-spacing:.07em;text-transform:uppercase;
+  padding:3px 7px;border-radius:3px;
+  border:1px solid rgba(246,241,230,.22);color:rgba(246,241,230,.58);
+}
+.carte .alg span{border-color:#DCD3C0;color:#8B8271}
+
+#merci{display:none;text-align:center;padding:26px 6px}
+#merci .rond{
+  width:58px;height:58px;border-radius:50%;background:var(--curry);color:var(--vert-fonce);
+  display:flex;align-items:center;justify-content:center;font-size:28px;margin:0 auto 20px;
+}
+#merci h3{font-family:var(--display);font-weight:400;font-size:29px;margin:0 0 12px;line-height:1.15}
+#merci p{color:var(--encre-doux);font-size:16px;margin:0 auto 14px;max-width:42ch}
+#merci .relance{font-size:14px}
+#merci a{color:var(--tomate)}
+#merci .btn{margin-top:8px}
+
+/* ---------- faq ---------- */
+.faq{background:var(--vert);color:var(--porcelaine);padding:84px 0 88px}
+.faq h2.titre{color:var(--porcelaine);margin-bottom:34px}
+.faq h2.titre em{color:var(--curry)}
+.faq details{border-bottom:1px solid rgba(246,241,230,.18)}
+.faq details:first-of-type{border-top:1px solid rgba(246,241,230,.18)}
+.faq summary{
+  list-style:none;cursor:pointer;padding:20px 40px 20px 0;position:relative;
+  font-size:18px;font-weight:600;color:var(--porcelaine);
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"+";position:absolute;right:6px;top:50%;transform:translateY(-50%);
+  font-family:var(--corps);font-size:24px;font-weight:400;color:var(--curry);
+  transition:transform .2s ease;
+}
+.faq details[open] summary::after{content:"–"}
+.faq summary:hover{color:var(--curry)}
+.faq .rep{padding:0 40px 22px 0;max-width:62ch}
+.faq .rep p{margin:0 0 12px;color:rgba(246,241,230,.72);font-size:16px}
+.faq .rep p:last-child{margin-bottom:0}
+.faq .rep strong{color:var(--curry)}
+@media(max-width:640px){
+  .faq{padding:46px 0 50px}
+  .faq summary{font-size:16.5px;padding:17px 34px 17px 0}
+  .faq .rep{padding-right:0}
+  .faq .rep p{font-size:15.5px}
+}
+
+.lien-map{text-decoration:none;border-bottom:1px dotted currentColor;padding-bottom:1px}
+footer .lien-map{color:rgba(246,241,230,.82)}
+footer .lien-map:hover{color:var(--curry)}
+.aide .lien-map{color:var(--tomate)}
+.etape .lien-map{color:var(--tomate)}
+.mini-map{font-size:12.5px !important;color:rgba(246,241,230,.4)}
+
+.partage{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px}
+.part-btn{
+  font-family:var(--corps);font-size:13.5px;cursor:pointer;
+  background:transparent;color:rgba(246,241,230,.75);
+  border:1px solid rgba(246,241,230,.28);border-radius:999px;padding:8px 15px;
+  transition:all .16s ease;
+}
+.part-btn:hover{background:var(--curry);border-color:var(--curry);color:var(--vert-fonce)}
+.part-retour{font-size:12.5px !important;color:var(--curry) !important}
+
+.lien-legal{
+  background:none;border:none;padding:0;cursor:pointer;
+  font-family:var(--corps);font-size:13px;color:rgba(246,241,230,.45);
+  text-decoration:underline;text-underline-offset:3px;
+}
+.lien-legal:hover{color:var(--curry)}
+
+.voile-legal{position:fixed;inset:0;background:rgba(14,36,28,.6);z-index:110;
+  opacity:0;pointer-events:none;transition:opacity .25s ease}
+.voile-legal.ouvert{opacity:1;pointer-events:auto}
+.legal{
+  position:fixed;z-index:115;left:50%;top:50%;transform:translate(-50%,-48%);
+  width:660px;max-width:calc(100vw - 32px);max-height:84vh;
+  background:var(--porcelaine);color:var(--encre);border-radius:10px;
+  display:flex;flex-direction:column;box-shadow:0 24px 70px rgba(0,0,0,.4);
+  opacity:0;pointer-events:none;transition:opacity .25s ease,transform .25s ease;
+}
+.legal.ouvert{opacity:1;transform:translate(-50%,-50%);pointer-events:auto}
+.legal-tete{display:flex;justify-content:space-between;align-items:center;
+  padding:22px 26px 16px;border-bottom:1px solid var(--porcelaine-2)}
+.legal-tete h3{font-family:var(--display);font-weight:400;font-size:26px;margin:0}
+.legal-corps{overflow-y:auto;padding:22px 26px 28px}
+.legal-corps h4{
+  font-family:var(--mono);font-size:11px;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--tomate);margin:26px 0 8px;
+}
+.legal-corps h4:first-of-type{margin-top:0}
+.legal-corps p{margin:0 0 12px;font-size:15px;line-height:1.6;color:var(--encre-doux)}
+.avert{
+  background:rgba(233,178,60,.2);border-left:3px solid var(--curry);
+  padding:12px 14px;font-size:14px !important;color:var(--encre) !important;margin-bottom:24px !important;
+}
+@media(max-width:640px){
+  .legal{max-height:88vh}
+  .legal-tete{padding:18px 18px 14px}
+  .legal-corps{padding:18px}
+}
+
+
+
+/* ---------- photos des plats ---------- */
+.plat.avec-photo{display:grid;grid-template-columns:68px minmax(0,1fr);gap:14px;align-items:start}
+.plat-photo{width:68px;height:68px;padding:0;border:none;border-radius:8px;overflow:hidden;cursor:zoom-in;background:var(--vert-clair)}
+.plat-photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .3s ease}
+.plat-photo:hover img{transform:scale(1.08)}
+.visionneuse{position:fixed;inset:0;z-index:120;background:rgba(14,36,28,.94);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:24px;
+  opacity:0;pointer-events:none;transition:opacity .22s ease}
+.visionneuse.ouvert{opacity:1;pointer-events:auto}
+.visionneuse img{max-width:min(92vw,720px);max-height:76vh;border-radius:10px;object-fit:contain}
+.visionneuse p{margin:0;color:var(--porcelaine);font-family:var(--display);font-size:26px;text-align:center}
+.fermer-vis{position:absolute;top:calc(14px + env(safe-area-inset-top));right:16px;background:none;border:none;
+  color:var(--porcelaine);font-size:38px;line-height:1;cursor:pointer}
+@media(max-width:640px){.plat.avec-photo{grid-template-columns:60px minmax(0,1fr);gap:12px}.plat-photo{width:60px;height:60px}}
+
+/* ---------- justification ---------- */
+.hero p.sous,.chapo,.histoire p,.etape p,.faq .rep p,.legal-corps p,.plat-ing,.paiement p,.appli-txt p{
+  text-align:justify;text-align-last:left;hyphens:auto;-webkit-hyphens:auto;
+}
+.histoire .final-phrase,.signature{text-align:left}
+
+/* ---------- appli ---------- */
+.fermer{background:none;border:none;font-size:28px;line-height:1;cursor:pointer;color:var(--encre-doux);padding:0 4px}
+.fermer:hover{color:var(--tomate)}
+header{padding-top:env(safe-area-inset-top)}
+.appli{
+  display:flex;align-items:center;gap:22px;flex-wrap:wrap;
+  margin-top:44px;padding:24px 26px;border-radius:14px;
+  background:rgba(246,241,230,.06);border:1px solid rgba(246,241,230,.14);
+}
+.appli-ico{border-radius:14px;flex:0 0 auto}
+.appli-txt{flex:1 1 260px}
+.appli-txt p{margin:0;font-size:14.5px;color:rgba(246,241,230,.72)}
+.appli-txt .foot-tit{color:var(--curry)}
+.appli-btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn-app{
+  display:inline-flex;align-items:center;gap:9px;cursor:pointer;
+  font-family:var(--corps);font-size:15px;font-weight:700;
+  padding:12px 18px;border-radius:999px;white-space:nowrap;
+  background:transparent;color:var(--porcelaine);border:1.5px solid rgba(246,241,230,.4);
+  transition:all .16s ease;
+}
+.btn-app svg{width:19px;height:19px;fill:currentColor}
+.btn-app:hover,.btn-app.moi{background:var(--curry);border-color:var(--curry);color:var(--vert-fonce)}
+.appli.installee{display:none}
+
+.menu-appli{
+  display:flex;align-items:center;gap:14px;cursor:pointer;
+  margin:0 24px 20px;padding:12px 14px;border-radius:10px;
+  background:rgba(233,178,60,.12);border:1px solid rgba(233,178,60,.3);
+  color:var(--porcelaine);font-family:var(--corps);font-size:15.5px;font-weight:600;text-align:left;
+}
+.menu-appli img{border-radius:8px}
+.menu-appli:hover{background:rgba(233,178,60,.22)}
+.menu-appli.installee{display:none}
+
+.fen-app{width:460px}
+.fen-app-logo{display:flex;flex-direction:column;align-items:center;gap:8px;margin:4px 0 22px}
+.fen-app-logo img{border-radius:16px;box-shadow:0 10px 24px rgba(14,36,28,.25)}
+.fen-app-logo span{font-size:13px;color:var(--encre-doux)}
+.fen-app-intro{text-align:center}
+.pas{list-style:none;margin:18px 0 0;padding:0;display:flex;flex-direction:column;gap:14px}
+.pas li{display:flex;gap:14px;align-items:flex-start}
+.pas .num{
+  flex:0 0 30px;height:30px;border-radius:50%;background:var(--vert);color:var(--curry);
+  display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:14px;
+}
+.pas p{margin:3px 0 0 !important;color:var(--encre) !important}
+.ico-inline{width:19px;height:19px;vertical-align:-4px;color:#1C6FE0}
+.fen-app-note{margin-top:20px !important;font-size:13.5px !important;text-align:center}
+@media(max-width:640px){.appli{padding:20px}.appli-btns{width:100%}.btn-app{flex:1;justify-content:center;padding:12px 10px;font-size:14.5px}}
+
+/* ---------- réglages mobile ---------- */
+@media(max-width:640px){
+  body{font-size:16.5px;padding-bottom:86px}
+  .wrap{padding-left:22px;padding-right:22px}
+
+  .bar{height:58px}
+  .marque{font-size:19px}
+  .nav .btn{padding:9px 16px;font-size:13.5px}
+
+  .eyebrow{font-size:10.5px;letter-spacing:.1em;margin-bottom:14px}
+  h2.titre{font-size:30px;line-height:1.08}
+  .chapo{margin-bottom:28px;font-size:16px}
+
+  .hero-grid{padding-top:0;padding-bottom:34px;gap:26px}
+  .hero-photo{margin:0 -22px}
+  .hero-photo img{aspect-ratio:auto;height:230px;object-fit:cover;object-position:center 55%;border-radius:0}
+  .hero h1{font-size:36px;line-height:1.02;margin-bottom:16px}
+  .hero p.sous{font-size:16.5px;margin-bottom:24px}
+  .hero-cta{flex-direction:column;gap:10px}
+  .hero-cta .btn{width:100%;justify-content:center;padding:14px 20px}
+  .tampon{
+    position:static;transform:none;display:inline-block;
+    margin:-34px 0 0 22px;padding:10px 16px;font-size:11px;
+    box-shadow:0 6px 18px rgba(0,0,0,.28);position:relative;z-index:2;
+  }
+  .tampon b{display:inline;font-size:22px;margin:0 4px}
+
+  .reassurance ul{grid-template-columns:1fr 1fr;gap:8px 12px;padding:16px 0}
+  .reassurance li{font-size:10.5px;letter-spacing:.03em;text-align:left;line-height:1.35}
+
+  .args{padding-top:40px;padding-bottom:32px}
+  .args-grid{gap:26px}
+  .arg h3{font-size:23px}
+  .arg p{font-size:15.5px}
+
+  .stars{padding-top:42px;padding-bottom:42px}
+  .stars-head{gap:16px;margin-bottom:24px}
+  .stars-head .btn{width:100%;justify-content:center}
+  .cartes{gap:18px}
+  .carte img{aspect-ratio:4/3}
+  .carte-txt{padding:16px 18px 20px}
+  .carte-titre h3{font-size:21px}
+
+  .ardoise{padding:44px 0 50px}
+  .tabs{flex-wrap:nowrap;overflow-x:auto;-webkit-overflow-scrolling:touch;
+        margin:0 -22px 30px;padding:0 22px 6px;scrollbar-width:none}
+  .tabs::-webkit-scrollbar{display:none}
+  .tab{padding:9px 15px;font-size:12px}
+  .plat{margin-bottom:18px}
+  .plat-nom{font-size:16.5px}
+  .plat-ing{font-size:13.5px}
+
+  .etapes{padding-top:40px;padding-bottom:40px}
+  .etapes-grid{margin-top:26px;gap:22px}
+  .etape h3{font-size:22px}
+
+  .histoire{padding:44px 0}
+  .histoire img{aspect-ratio:1/1}
+  blockquote.citation{font-size:22px;margin:22px 0;padding-left:16px}
+  .signature{font-size:22px}
+
+  .preuve{padding-top:44px;padding-bottom:44px}
+  .mosaique{grid-template-columns:1fr 1fr;gap:8px;margin:26px 0 0}
+
+  .commande{padding:44px 0 50px}
+  .form-carte{padding:22px 16px;border-radius:6px}
+  .champ{margin-bottom:18px}
+  .duo{gap:0}
+  .choix{gap:7px}
+  .choix label{padding:8px 14px;font-size:14.5px}
+  .paiement{padding:22px 20px}
+  .paiement h3{font-size:21px}
+
+  .final{padding:44px 0 52px}
+  .final h2{font-size:31px}
+  .final p{margin-bottom:22px}
+
+  footer{padding:40px 0 34px}
+  .foot-bas{margin-top:30px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <div class="gauche">
+      <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="deroulant" aria-label="Ouvrir le menu">
+        <span></span><span></span><span></span>
+      </button>
+      <a class="marque" href="#top">La Cantine de <span>Léa</span></a>
+    </div>
+    <nav class="nav">
+      <a class="btn btn-curry" href="#commander">Commander</a>
+    </nav>
+  </div>
+  <div class="voile-menu" id="voile-menu"></div>
+  <nav class="deroulant" id="deroulant" aria-label="Menu principal" aria-hidden="true">
+    <div class="deroulant-tete">
+      <span class="marque">La Cantine de <span>Léa</span></span>
+      <button class="fermer-menu" id="fermer-menu" type="button" aria-label="Fermer le menu">&times;</button>
+    </div>
+    <div class="deroulant-liens">
+      <a href="#histoire"><em>01</em>Concept</a>
+      <a href="#menu"><em>02</em>Carte</a>
+      <a href="#faq"><em>03</em>Questions</a>
+      <a href="#commander"><em>04</em>Commander</a>
+    </div>
+    <button type="button" class="menu-appli" id="menu-appli">
+      <img src="icons/icon-192.png" alt="" width="34" height="34">
+      <span>Installer l'appli</span>
+    </button>
+    <div class="deroulant-pied">
+      <p>Samedi &amp; dimanche<br>Rue de la Concorde, Toulouse</p>
+      <a href="https://www.instagram.com/lacantinedelea/">@lacantinedelea</a>
+      <a href="mailto:lacantinedelea@outlook.fr">lacantinedelea@outlook.fr</a>
+    </div>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow pale">Toulouse · Une cuisine, une personne</p>
+      <h1>La cuisine maison,<br><em>tout simplement.</em></h1>
+      <p class="sous">Chaque semaine, je mets huit plats à l'honneur. Tu me dis ce que tu aimes et ce que tu évites, je t'envoie la sélection, et tu passes chercher tes bols le week-end.</p>
+      <div class="hero-cta">
+        <a class="btn btn-curry" href="#commander">Passer commande</a>
+        <a class="btn btn-ligne" href="#menu">Voir ce que je cuisine</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="visuels/poulet-au-thym.jpg" alt="Bol de plat fait maison préparé par Léa">
+      <div class="tampon">À partir de<b>6,50 €</b>le plat, tout compris</div>
+    </div>
+  </div>
+</section>
+
+<div class="reassurance">
+  <div class="wrap">
+    <ul>
+      <li>Rien d'industriel</li>
+      <li>Une seule paire de mains</li>
+      <li>À récupérer le week-end</li>
+      <li>Je réponds moi-même</li>
+    </ul>
+  </div>
+</div>
+
+<!-- HISTOIRE -->
+<section class="histoire" id="histoire">
+  <div class="wrap histoire-grid">
+    <img src="images/lea.jpg" alt="Léa dans sa cuisine">
+    <div>
+      <p class="eyebrow">Qui est derrière les bols</p>
+      <h2 class="titre">Mon histoire</h2>
+      <p>Juriste de profession, je suis passionnée de cuisine depuis toute petite. J'ai appris à cuisiner avec ma grand mère dès que j'ai su marcher ! Ces heures passées en cuisine avec elle m'ont donné le goût du partage et de la cuisine pour les autres.</p>
+      <p>A mes 18 ans, l'idée d'une offre de traiteur commence à émerger, et je garde dans un coin de ma tête ce projet tout le temps de mes études de droit. En parallèle, je multiplie les diners et invitations de mes amis et famille car la cuisine me manque encore et toujours.</p>
+      <p>En 2024, je me mets à cuisiner des gâteaux notamment pour mes collègues de travail et ceux de mon conjoint. Ses collègues de travail goutent régulièrement les plats que je lui prépare pour les midi : curry japonais, boeuf bourguignon, lasagnes, moussaka… et surnomment ma cuisine «&nbsp;La Cantine de Léa&nbsp;», que je trouve très adapté à ce que je fais finalement : une cuisine conviviale, faite avec le coeur, et à partager.</p>
+      <p>Dans la foulée, une de ses collègues me demande si elle peut me commander un plat qu'elle me paiera. Je décide de concrétiser mon projet : j'investis dans des bols cartonnés, je crée un compte Instagram professionnel, et me lance dans la réalisation de vidéos de recettes.</p>
+      <p>En 2026, je quitte Paris et reviens vivre à Toulouse. Je décide d'officialiser mon projet et crée mon site, pour que toutes les personnes qui souhaitent manger des produits faits maison, sans se ruiner, puissent profiter des plats de leurs envie, tous les jours.</p>
+      <p class="final-phrase">Et ce n'est que le début !!</p>
+      <p class="signature">Léa<span>Seule aux fourneaux, depuis le début</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ARDOISE -->
+<section class="ardoise" id="menu">
+  <div class="wrap">
+    <p class="eyebrow pale">Mon carnet de recettes</p>
+    <h2 class="titre">53 recettes, <em>une seule cuisine.</em></h2>
+    <p class="chapo">Voici tout ce que je sais faire. Chaque semaine, j'en choisis huit et je te les envoie : tu n'as plus qu'à piocher parmi eux. Rien à composer, juste à me dire ce que tu aimes.</p>
+    <p class="chapo" style="font-size:14px;margin-top:-26px">Les pastilles signalent les allergènes présents dans chaque plat. En cas d'allergie, préviens-moi : je vérifie avec toi avant de cuisiner.</p>
+
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" aria-selected="true" data-cible="poulet">Poulet · 15</button>
+      <button class="tab" role="tab" aria-selected="false" data-cible="viande">Viande · 10</button>
+      <button class="tab" role="tab" aria-selected="false" data-cible="poisson">Poisson · 13</button>
+      <button class="tab" role="tab" aria-selected="false" data-cible="vege">Végétarien &amp; salades · 15</button>
+    </div>
+
+    <div class="panneau" id="poulet">
+      <ul class="plats">
+        <li class="plat avec-photo"><button type="button" class="plat-photo" data-src="visuels/curry-japonais.jpg" aria-label="Voir la photo : Curry japonais"><img src="visuels/curry-japonais.jpg" alt="" loading="lazy"></button><div class="plat-corps"><div class="plat-ligne"><span class="plat-nom">Curry japonais</span><span class="pointille"></span><span class="plat-prix">8,00</span></div><p class="plat-ing">Poulet, carottes, oignons, pommes de terre, sauce curry mi-forte, riz blanc</p></div></li>
+        <li class="plat avec-photo"><button type="button" class="plat-photo" data-src="visuels/poulet-reunionnais.jpg" aria-label="Voir la photo : Poulet réunionnais"><img src="visuels/poulet-reunionnais.jpg" alt="" loading="lazy"></button><div class="plat-corps"><div class="plat-ligne"><span class="plat-nom">Poulet réunionnais</span><span class="pointille"></span><span class="plat-prix">8,00</span></div><p class="plat-ing">Poulet, lait de coco, tomate pelée, curcuma, poivrons rouges, oignons</p></div></li>
+        <li class="plat avec-photo"><button type="button" class="plat-photo" data-src="visuels/nouilles-sautees.jpg" aria-label="Voir la photo : Nouilles sautées"><img src="visuels/nouilles-sautees.jpg" alt="" loading="lazy"></button><div class="plat-corps"><div class="plat-ligne"><span class="plat-nom">Nouilles sautées</span><span class="pointille"></span><span class="plat-prix">8,00</span></div><p class="plat-ing">Nouilles aux œufs, poulet mariné, courgettes, oignons, œuf, oignons frits, sauce soja, carottes</p><div class="alg"><span>Gluten</span><span>Œufs</span><span>Soja</span></div></div></li>
+        <li class="plat avec-photo"><button type="button" class="plat-photo" data-src="visuels/couscous.jpg" aria-label="Voir la photo : Couscous"><img src="visuels/couscous.jpg" alt="" loading="lazy"></button><div class="plat-corps"><div class="plat-ligne"><span class="plat-nom">Couscous</span><span class="pointille"></span><span class="plat-prix">8,50</span></div><p class="plat-ing">Poulet, carottes, courgettes, pois chiches, oignons confits, pommes de terre, semoule</p><div class="alg"><span>Gluten</span></div></div></li>
+        <li class="plat avec-photo"><button type="button" class="plat-photo" data-src="visuels/poulet-au-citron-confit.jpg" aria-label="Voir la photo : Poulet au citron confit"><img src="visuels/poulet-au-citron-confit.jpg" alt="" loading="lazy"></button><div class="plat-corps"><div class="plat-ligne"><span class="plat-nom">Poulet au citron confit</span><span class="pointille"></span><span class="plat-prix">8,00</span></div><p class="plat-ing">Poulet, citron confit, oignons, persil, olives, pâtes</p><div class="alg"><span>Gluten</span></div></div></li>
+        <li class="plat"><div class="plat-ligne"><span class="plat-nom">Pad thaï</span><span class="pointille"></span><span class="plat-prix">8,50</span></div><p class="plat-ing">Nouilles de riz, œuf, poulet mariné à la sauce soja, carottes, menthe, cacahuètes concassées</p><div class="alg"><span>Gluten</span><span>Œufs</span><span>Arachides</span><span>Soja</span></div></li>
+        <li class="plat avec-photo"><button type="button" class="plat-photo" data-src="visuels/poulet-au-thym.jpg" aria-label="Voir la photo : Poulet au thym"><img src="visuels/poulet-au-thym.jpg" alt="" loading="lazy"></button><div class="plat-corps"><div class="plat-ligne"><span class="plat-nom">Poulet au thym</span><span class="pointille"></span><span class="plat-prix">8,00</span></div><p class="plat-ing">Poulet, sauce tomate au thym, olives, oignons, semoule</p><div class="alg"><span>Gluten</span></div></div></li>
+        <li class="plat avec-photo"><button type="button" class="plat-photo" data-src="visuels/poulet-aux-noix-de-cajou.jpg" aria-label="Voir la photo : Poulet aux noix de cajou"><img src="visuels/poulet-aux-noix-de-cajou.jpg" alt="" loading="lazy"></button><div class="plat-corps"><div class="plat-ligne"><span class="plat-nom">Poulet aux noix de cajou</span><span class="pointille"></span><span class="plat-prix">8,00</span></div><p class="plat-ing">Poulet, poivrons rouges, oignons, sauce soja miel, sésame, noix de cajou, riz blanc</p><div class="alg"><span>Gluten</span><span>Fruits à coque</span><span>Soja</span><span>Sésame</span></div></div></li>
+        <li class="plat avec-photo"><button type="button" class="plat-photo" data-src="visuels/boulgour-mediterraneen.jpg" aria-label="Voir la photo : Boulgour méditerranéen"><img src="visuels/boulgour-mediterraneen.jpg" alt="" loading="lazy"></button><div class="plat-corps"><div class="plat-ligne"><span class="plat-nom">Boulgour méditerranéen</span><span class="pointille"></span><span class="plat-prix">8,00</span></div><p class="plat-ing">Boulgour, poulet grillé, tomates séchées, olives à la grecque, oignons, pesto verde</p><div class="alg"><span>Gluten</span></div></div></li>
+        <li class="plat avec-photo"><button type="button" class="plat-photo" data-src="visuels/poulet-tikka.jpg" aria-label="Voir la photo : Poulet tikka"><img src="visuels/poulet-tikka.jpg" alt="" loading="lazy"></button><div class="plat-corps"><div class="plat-ligne"><span class="plat-nom">Poulet tikka</span><span class="pointille"></span><span class="plat-prix">8,00</span></div><p class="plat-ing">Poulet, oignons rouges, poivrons, sauce au yaourt et épices massala, riz blanc</p><div class="alg"><span>Lait</span></div></div></li>
+        <li class="plat"><div class="plat-ligne"><span class="plat-nom">Poulet vindaloo</span><span class="pointille"></span><span class="plat-prix">8,00</span></div><p class="plat-ing">Poulet, oignons rouges, lait de coco, coriandre, moutarde, épices, riz blanc</p><div class="alg"><span>Moutarde</span></div></li>
+        <li class="plat avec-photo"><button type="button" class="plat-photo" data-src="visuels/poulet-cacahuete.jpg" aria-label="Voir la photo : Poulet cacahuète"><img src="visuels/poulet-cacahuete.jpg" alt="" loading="lazy"></button><div class="plat-corps"><div class="plat-ligne"><span class="plat-nom">Poulet cacahuète</span><span class="pointille"></span><span class="plat-prix">8,00</span></div><p class="plat-ing">Poulet, beurre de cacahuète maison non sucré, sauce soja miel, oignons, lamelles de légumes, riz blanc</p><div class="alg"><span>Gluten</span><span>Arachides</span><span>Soja</span></div></div></li>
+        <li class="plat avec-photo"><button type="button" class="plat-photo" data-src="visuels/poulet-roti-aux-deux-pommes.jpg" aria-label="Voir la photo : Poulet rôti aux deux pommes"><img src="visuels/poulet-roti-aux-deux-pommes.jpg" alt="" loading="lazy"></button><div class="plat-corps"><div class="plat-ligne"><span class="plat-nom">Poulet rôti aux deux pommes</span><span class="pointille"></span><span class="plat-prix">8,00</span></div><p class="plat-ing">Poulet, pommes de terre, pommes</p></div></li>
+        <li class="plat avec-photo"><button type="button" class="plat-photo" data-src="visuels/tenders-sans-friture.jpg" aria-label="Voir la photo : Tenders sans friture"><img src="visuels/tenders-sans-friture.jpg" alt="" loading="lazy"></button><div class="plat-corps"><div class="plat-ligne"><span class="plat-nom">Tenders sans friture</span><span class="pointille"></span><span class="plat-prix">8,00</span></div><p class="plat-ing">Poulet, corn flakes non sucrés, œuf, patate douce rôtie, ratatouille</p><div class="alg"><span>Gluten</span><span>Œufs</span></div></div></li>
+        <li class="plat avec-photo"><button type="button" class="plat-photo" data-src="visuels/brochettes-poulet-sate.jpg" aria-label="Voir la photo : Poulet au saté"><img src="visuels/brochettes-poulet-sate.jpg" alt="" loading="lazy"></button><div class="plat-corps"><div class="plat-ligne"><span class="plat-nom">Poulet au saté</span><span class="pointille"></span><span class="plat-prix">8,00</span></div><p class="plat-ing">Blanc de poulet, beurre de cacahuète 100 %, sauce soja, épices saté, lait de coco, riz, haricots verts</p><div class="alg"><span>Gluten</span><span>Arachides</span><span>Soja</span></div></div></li>
+      </ul>
+    </div>
+
+    <div class="panneau" id="viande" hidden>
+      <ul class="plats">
+        <li class="plat"><div class="plat-ligne"><span class="plat-nom">Hachis parmentier</span><span class="pointille"></span><span class="plat-prix">9,50</span></div><p class="plat-ing">Viande pure bœuf 5 %, purée de pommes de terre maison</p><div class="alg"><span>Œufs</span></div></li>
+        <li class="plat"><div class="plat-ligne"><span class="plat-nom">Parmentier d'effiloché de porc confit</span><span class="pointille"></span><span class="plat-prix">9,50</span></div><p class="plat-ing">Échine de porc confite 8 h, sauce barbecue, oignons, écrasé de pommes de terre</p></li>
+        <li class="plat"><div class="plat-ligne"><span class="plat-nom">Aubergines à la parmigiana au bœuf</span><span class="pointille"></span><span class="plat-prix">9,50</span></div><p class="plat-ing">Aubergines, sauce bolognaise à la viande pure bœuf 5 %, parmesan, mozzarella, riz blanc</p><div class="alg"><span>Œufs</span><span>Lait</span></div></li>
+        <li class="plat avec-photo"><button type="button" class="plat-photo" data-src="visuels/aubergines-ottomane-au-boeuf.jpg" aria-label="Voir la photo : Aubergines farcies à l'ottomane au bœuf"><img src="visuels/aubergines-ottomane-au-boeuf.jpg" alt="" loading="lazy"></button><div class="plat-corps"><div class="plat-ligne"><span class="plat-nom">Aubergines farcies à l'ottomane au bœuf</span><span class="pointille"></span><span class="plat-prix">9,50</span></div><p class="plat-ing">Aubergines, sauce bolognaise à la viande pure bœuf 5 %, thym, boulgour</p><div class="alg"><span>Gluten</span><span>Œufs</span></div></div></li>
+        <li class="plat"><div class="plat-ligne"><span class="plat-nom">Lasagnes au bœuf</span><span class="pointille"></span><span class="plat-prix">9,50</span></div><p class="plat-ing">Pâtes à lasagne, sauce bolognaise à la viande pure bœuf 5 %, emmental râpé, béchamel maison</p><div class="alg"><span>Gluten</span><span>Œufs</span><span>Lait</span></div></li>
+        <li class="plat avec-photo"><button type="button" class="plat-photo" data-src="visuels/bibimbap.jpg" aria-label="Voir la photo : Bibimbap"><img src="visuels/bibimbap.jpg" alt="" loading="lazy"></button><div class="plat-corps"><div class="plat-ligne"><span class="plat-nom">Bibimbap</span><span class="pointille"></span><span class="plat-prix">9,50</span></div><p class="plat-ing">Viande pure bœuf 5 % marinée, oignons, courgettes, carottes, shiitake, œuf au plat, riz blanc</p><div class="alg"><span>Œufs</span></div></div></li>
+        <li class="plat"><div class="plat-ligne"><span class="plat-nom">Boulettes au cumin</span><span class="pointille"></span><span class="plat-prix">9,50</span></div><p class="plat-ing">Boulettes de bœuf, sauce tomate, cumin, semoule</p><div class="alg"><span>Gluten</span><span>Œufs</span></div></li>
+        <li class="plat avec-photo"><button type="button" class="plat-photo" data-src="visuels/filet-mignon-moutarde-miel.jpg" aria-label="Voir la photo : Filet mignon moutarde miel"><img src="visuels/filet-mignon-moutarde-miel.jpg" alt="" loading="lazy"></button><div class="plat-corps"><div class="plat-ligne"><span class="plat-nom">Filet mignon moutarde miel</span><span class="pointille"></span><span class="plat-prix">9,50</span></div><p class="plat-ing">Filet mignon du marché Victor-Hugo, sauce moutarde miel, pommes de terre</p><div class="alg"><span>Moutarde</span></div></div></li>
+        <li class="plat"><div class="plat-ligne"><span class="plat-nom">Porc au caramel</span><span class="pointille"></span><span class="plat-prix">9,50</span></div><p class="plat-ing">Filet mignon du marché Victor-Hugo, épices, caramel, sauce soja, riz blanc</p><div class="alg"><span>Gluten</span><span>Soja</span></div></li>
+        <li class="plat avec-photo"><button type="button" class="plat-photo" data-src="visuels/chili-con-carne.jpg" aria-label="Voir la photo : Chili con carne"><img src="visuels/chili-con-carne.jpg" alt="" loading="lazy"></button><div class="plat-corps"><div class="plat-ligne"><span class="plat-nom">Chili con carne</span><span class="pointille"></span><span class="plat-prix">9,50</span></div><p class="plat-ing">Haricots rouges, viande pure bœuf 5 %, sauce tomate épicée, riz blanc</p><div class="alg"><span>Œufs</span></div></div></li>
+      </ul>
+    </div>
+
+    <div class="panneau" id="poisson" hidden>
+      <ul class="plats">
+        <li class="plat avec-photo"><button type="button" class="plat-photo" data-src="visuels/merlan-a-la-marocaine.jpg" aria-label="Voir la photo : Merlan à la marocaine"><img src="visuels/merlan-a-la-marocaine.jpg" alt="" loading="lazy"></button><div class="plat-corps"><div class="plat-ligne"><span class="plat-nom">Merlan à la marocaine</span><span class="pointille"></span><span class="plat-prix">9,50</span></div><p class="plat-ing">Merlan, pommes de terre, épices marocaines, courgettes, oignons</p><div class="alg"><span>Poisson</span></div></div></li>
+        <li class="plat avec-photo"><button type="button" class="plat-photo" data-src="visuels/saumon-a-la-toscane.jpg" aria-label="Voir la photo : Saumon à la toscane"><img src="visuels/saumon-a-la-toscane.jpg" alt="" loading="lazy"></button><div class="plat-corps"><div class="plat-ligne"><span class="plat-nom">Saumon à la toscane</span><span class="pointille"></span><span class="plat-prix">10,00</span></div><p class="plat-ing">Saumon, épinards, tomates séchées, crème allégée, parmesan, oignons, pâtes</p><div class="alg"><span>Gluten</span><span>Lait</span><span>Poisson</span></div></div></li>
+                <li class="plat avec-photo"><button type="button" class="plat-photo" data-src="visuels/pad-thai-aux-crevettes.jpg" aria-label="Voir la photo : Pad thaï aux crevettes"><img src="visuels/pad-thai-aux-crevettes.jpg" alt="" loading="lazy"></button><div class="plat-corps"><div class="plat-ligne"><span class="plat-nom">Pad thaï aux crevettes</span><span class="pointille"></span><span class="plat-prix">9,50</span></div><p class="plat-ing">Nouilles de riz, crevettes, œuf, cacahuètes concassées, sauce soja, menthe, carottes, oignons</p><div class="alg"><span>Gluten</span><span>Œufs</span><span>Arachides</span><span>Crustacés</span><span>Soja</span></div></div></li>
+        <li class="plat"><div class="plat-ligne"><span class="plat-nom">Crevettes coco</span><span class="pointille"></span><span class="plat-prix">8,50</span></div><p class="plat-ing">Nouilles aux œufs, crevettes, lait de coco, sauce soja, oignons</p><div class="alg"><span>Gluten</span><span>Œufs</span><span>Crustacés</span><span>Soja</span></div></li>
+        <li class="plat"><div class="plat-ligne"><span class="plat-nom">Saumon laqué</span><span class="pointille"></span><span class="plat-prix">9,50</span></div><p class="plat-ing">Saumon laqué à la sauce soja, patate douce rôtie</p><div class="alg"><span>Gluten</span><span>Poisson</span><span>Soja</span></div></li>
+        <li class="plat"><div class="plat-ligne"><span class="plat-nom">Brochettes de saumon cacahuète</span><span class="pointille"></span><span class="plat-prix">10,00</span></div><p class="plat-ing">Saumon mariné sauce soja et beurre de cacahuète maison, nouilles aux œufs, courgettes, oignons</p><div class="alg"><span>Gluten</span><span>Œufs</span><span>Arachides</span><span>Poisson</span><span>Soja</span></div></li>
+        <li class="plat avec-photo"><button type="button" class="plat-photo" data-src="visuels/riz-cantonais-aux-crevettes.jpg" aria-label="Voir la photo : Riz cantonais aux crevettes"><img src="visuels/riz-cantonais-aux-crevettes.jpg" alt="" loading="lazy"></button><div class="plat-corps"><div class="plat-ligne"><span class="plat-nom">Riz cantonais aux crevettes</span><span class="pointille"></span><span class="plat-prix">8,50</span></div><p class="plat-ing">Crevettes, œuf, riz blanc, petits pois, oignons, oignons frits, carottes</p><div class="alg"><span>Œufs</span><span>Crustacés</span></div></div></li>
+        <li class="plat avec-photo"><button type="button" class="plat-photo" data-src="visuels/merlan-croute-de-parmesan.jpg" aria-label="Voir la photo : Merlan en croûte de parmesan"><img src="visuels/merlan-croute-de-parmesan.jpg" alt="" loading="lazy"></button><div class="plat-corps"><div class="plat-ligne"><span class="plat-nom">Merlan en croûte de parmesan</span><span class="pointille"></span><span class="plat-prix">9,50</span></div><p class="plat-ing">Merlan, croûte de parmesan, purée de carotte maison</p><div class="alg"><span>Lait</span><span>Poisson</span></div></div></li>
+        <li class="plat avec-photo"><button type="button" class="plat-photo" data-src="visuels/merlan-coco.jpg" aria-label="Voir la photo : Merlan coco"><img src="visuels/merlan-coco.jpg" alt="" loading="lazy"></button><div class="plat-corps"><div class="plat-ligne"><span class="plat-nom">Merlan coco</span><span class="pointille"></span><span class="plat-prix">9,50</span></div><p class="plat-ing">Merlan, lait de coco, oignons rouges, brocoli, semoule</p><div class="alg"><span>Gluten</span><span>Poisson</span></div></div></li>
+        <li class="plat avec-photo"><button type="button" class="plat-photo" data-src="visuels/saumon-bowl-facon-tataki.jpg" aria-label="Voir la photo : Saumon bowl façon tataki"><img src="visuels/saumon-bowl-facon-tataki.jpg" alt="" loading="lazy"></button><div class="plat-corps"><div class="plat-ligne"><span class="plat-nom">Saumon bowl façon tataki</span><span class="pointille"></span><span class="plat-prix">10,00</span></div><p class="plat-ing">Saumon en croûte de sésame, riz blanc, haricots verts</p><div class="alg"><span>Poisson</span><span>Sésame</span></div></div></li>
+        <li class="plat avec-photo"><button type="button" class="plat-photo" data-src="visuels/risotto-orzo-saumon-poireaux.jpg" aria-label="Voir la photo : Risotto d'orzo saumon poireaux"><img src="visuels/risotto-orzo-saumon-poireaux.jpg" alt="" loading="lazy"></button><div class="plat-corps"><div class="plat-ligne"><span class="plat-nom">Risotto d'orzo saumon poireaux</span><span class="pointille"></span><span class="plat-prix">10,00</span></div><p class="plat-ing">Orzo, crème légère, citron, persil, saumon, oignons, poireaux</p><div class="alg"><span>Gluten</span><span>Lait</span><span>Poisson</span></div></div></li>
+        <li class="plat avec-photo"><button type="button" class="plat-photo" data-src="visuels/riz-sauvage-saumon-laque.jpg" aria-label="Voir la photo : Riz sauvage aux deux champignons et saumon laqué"><img src="visuels/riz-sauvage-saumon-laque.jpg" alt="" loading="lazy"></button><div class="plat-corps"><div class="plat-ligne"><span class="plat-nom">Riz sauvage aux deux champignons et saumon laqué</span><span class="pointille"></span><span class="plat-prix">10,00</span></div><p class="plat-ing">Riz sauvage, sauce soja, oignons, champignons de Paris, shiitaké, pavé de saumon, sauce miel gingembre, huile de sésame</p><div class="alg"><span>Gluten</span><span>Poisson</span><span>Soja</span><span>Sésame</span></div></div></li>
+        <li class="plat avec-photo"><button type="button" class="plat-photo" data-src="visuels/merlan-coco-citron.jpg" aria-label="Voir la photo : Merlan coco citron"><img src="visuels/merlan-coco-citron.jpg" alt="" loading="lazy"></button><div class="plat-corps"><div class="plat-ligne"><span class="plat-nom">Merlan coco citron</span><span class="pointille"></span><span class="plat-prix">9,50</span></div><p class="plat-ing">Merlan, lait de coco, citron vert, oignon, ail, gingembre, concentré de tomate, persil, épices saté, semoule</p><div class="alg"><span>Gluten</span><span>Poisson</span></div></div></li>
+      </ul>
+    </div>
+
+    <div class="panneau" id="vege" hidden>
+      <ul class="plats">
+        <li class="plat avec-photo"><button type="button" class="plat-photo" data-src="visuels/tofu-a-l-asiatique.jpg" aria-label="Voir la photo : Tofu à l'asiatique"><img src="visuels/tofu-a-l-asiatique.jpg" alt="" loading="lazy"></button><div class="plat-corps"><div class="plat-ligne"><span class="plat-nom">Tofu à l'asiatique</span><span class="pointille"></span><span class="plat-prix">7,50</span></div><p class="plat-ing">Tofu mariné, beurre de cacahuète maison, gingembre mariné, riz blanc, champignons, haricots verts, concombre</p><div class="alg"><span>Arachides</span><span>Soja</span></div></div></li>
+        <li class="plat"><div class="plat-ligne"><span class="plat-nom">Dahl de lentilles corail</span><span class="pointille"></span><span class="plat-prix">7,00</span></div><p class="plat-ing">Lentilles corail, riz blanc, lait de coco, curcuma, tomate pelée</p></li>
+        <li class="plat avec-photo"><button type="button" class="plat-photo" data-src="visuels/aubergines-a-la-parmigiana.jpg" aria-label="Voir la photo : Aubergines à la parmigiana"><img src="visuels/aubergines-a-la-parmigiana.jpg" alt="" loading="lazy"></button><div class="plat-corps"><div class="plat-ligne"><span class="plat-nom">Aubergines à la parmigiana</span><span class="pointille"></span><span class="plat-prix">7,50</span></div><p class="plat-ing">Aubergines, sauce tomate thym et laurier, parmesan, mozzarella, riz blanc</p><div class="alg"><span>Lait</span></div></div></li>
+        <li class="plat avec-photo"><button type="button" class="plat-photo" data-src="visuels/cannellonis-aux-epinards.jpg" aria-label="Voir la photo : Cannellonis aux épinards"><img src="visuels/cannellonis-aux-epinards.jpg" alt="" loading="lazy"></button><div class="plat-corps"><div class="plat-ligne"><span class="plat-nom">Cannellonis aux épinards</span><span class="pointille"></span><span class="plat-prix">7,00</span></div><p class="plat-ing">Cannellonis, farce fromage frais épinards, fromage râpé, sauce tomate</p><div class="alg"><span>Gluten</span><span>Lait</span></div></div></li>
+        <li class="plat avec-photo"><button type="button" class="plat-photo" data-src="visuels/salade-lentilles-halloumi.jpg" aria-label="Voir la photo : Salade de lentilles au halloumi grillé"><img src="visuels/salade-lentilles-halloumi.jpg" alt="" loading="lazy"></button><div class="plat-corps"><div class="plat-ligne"><span class="plat-nom">Salade de lentilles au halloumi grillé</span><span class="pointille"></span><span class="plat-prix">7,50</span></div><p class="plat-ing">Lentilles vertes, halloumi grillé, œuf mollet, oignons rouges, sauce moutarde, pois chiches</p><div class="alg"><span>Œufs</span><span>Lait</span><span>Moutarde</span></div></div></li>
+        <li class="plat avec-photo"><button type="button" class="plat-photo" data-src="visuels/salade-patate-douce-feta.jpg" aria-label="Voir la photo : Salade patate douce et feta"><img src="visuels/salade-patate-douce-feta.jpg" alt="" loading="lazy"></button><div class="plat-corps"><div class="plat-ligne"><span class="plat-nom">Salade patate douce et feta</span><span class="pointille"></span><span class="plat-prix">7,50</span></div><p class="plat-ing">Patate douce rôtie, jeunes pousses, feta, boulgour, œuf mollet, sauce miel moutarde</p><div class="alg"><span>Gluten</span><span>Œufs</span><span>Lait</span><span>Moutarde</span></div></div></li>
+        <li class="plat avec-photo"><button type="button" class="plat-photo" data-src="visuels/salade-thaie-aux-crevettes.jpg" aria-label="Voir la photo : Salade thaïe aux crevettes"><img src="visuels/salade-thaie-aux-crevettes.jpg" alt="" loading="lazy"></button><div class="plat-corps"><div class="plat-ligne"><span class="plat-nom">Salade thaïe aux crevettes</span><span class="pointille"></span><span class="plat-prix">8,50</span></div><p class="plat-ing">Nouilles de riz, crevettes, carottes, concombre, oignons frits, sauce cacahuète, menthe</p><div class="alg"><span>Arachides</span><span>Crustacés</span></div></div></li>
+        <li class="plat avec-photo"><button type="button" class="plat-photo" data-src="visuels/bowl-proteine-au-poulet.jpg" aria-label="Voir la photo : Bowl protéiné au poulet"><img src="visuels/bowl-proteine-au-poulet.jpg" alt="" loading="lazy"></button><div class="plat-corps"><div class="plat-ligne"><span class="plat-nom">Bowl protéiné au poulet</span><span class="pointille"></span><span class="plat-prix">8,50</span></div><p class="plat-ing">Poulet massala, concombre, houmous maison, oignons rouges, menthe, riz sauvage</p></div></li>
+        <li class="plat avec-photo"><button type="button" class="plat-photo" data-src="visuels/salade-orzo-au-poulet.jpg" aria-label="Voir la photo : Salade d'orzo au poulet"><img src="visuels/salade-orzo-au-poulet.jpg" alt="" loading="lazy"></button><div class="plat-corps"><div class="plat-ligne"><span class="plat-nom">Salade d'orzo au poulet</span><span class="pointille"></span><span class="plat-prix">8,50</span></div><p class="plat-ing">Orzo, poulet grillé, feta, jeunes pousses, oignons rouges, sauce moutarde miel</p><div class="alg"><span>Gluten</span><span>Lait</span><span>Moutarde</span></div></div></li>
+        <li class="plat avec-photo"><button type="button" class="plat-photo" data-src="visuels/salade-poulet-peche-rotie.jpg" aria-label="Voir la photo : Salade poulet et pêche rôtie"><img src="visuels/salade-poulet-peche-rotie.jpg" alt="" loading="lazy"></button><div class="plat-corps"><div class="plat-ligne"><span class="plat-nom">Salade poulet et pêche rôtie</span><span class="pointille"></span><span class="plat-prix">8,50</span></div><p class="plat-ing">Poulet et pêches grillés au miel, jeunes pousses, quinoa, feta, sauce vinaigre de cidre miel</p><div class="alg"><span>Lait</span></div></div></li>
+        <li class="plat avec-photo"><button type="button" class="plat-photo" data-src="visuels/salade-lentilles-croustillantes.jpg" aria-label="Voir la photo : Salade de lentilles croustillantes"><img src="visuels/salade-lentilles-croustillantes.jpg" alt="" loading="lazy"></button><div class="plat-corps"><div class="plat-ligne"><span class="plat-nom">Salade de lentilles croustillantes</span><span class="pointille"></span><span class="plat-prix">7,50</span></div><p class="plat-ing">Lentilles corail, poivrons rouges, oignons rouges, menthe, persil, œuf mollet, concombre, sauce sésame</p><div class="alg"><span>Œufs</span><span>Sésame</span></div></div></li>
+        <li class="plat avec-photo"><button type="button" class="plat-photo" data-src="visuels/salade-petit-epeautre-chevre.jpg" aria-label="Voir la photo : Salade de petit épeautre au chèvre"><img src="visuels/salade-petit-epeautre-chevre.jpg" alt="" loading="lazy"></button><div class="plat-corps"><div class="plat-ligne"><span class="plat-nom">Salade de petit épeautre au chèvre</span><span class="pointille"></span><span class="plat-prix">8,50</span></div><p class="plat-ing">Petit épeautre, chèvre, poulet grillé, oignons rouges, courgettes, aubergines, sauce balsamique</p><div class="alg"><span>Gluten</span><span>Lait</span></div></div></li>
+        <li class="plat"><div class="plat-ligne"><span class="plat-nom">Aubergines farcies à l'ottomane</span><span class="pointille"></span><span class="plat-prix">7,50</span></div><p class="plat-ing">Aubergines, sauce tomate au thym, boulgour</p><div class="alg"><span>Gluten</span></div></li>
+        <li class="plat avec-photo"><button type="button" class="plat-photo" data-src="visuels/quinoa-automnal.jpg" aria-label="Voir la photo : Quinoa automnal"><img src="visuels/quinoa-automnal.jpg" alt="" loading="lazy"></button><div class="plat-corps"><div class="plat-ligne"><span class="plat-nom">Quinoa automnal</span><span class="pointille"></span><span class="plat-prix">7,00</span></div><p class="plat-ing">Quinoa tricolore, champignons de Paris, patate douce, jeunes pousses, œuf mollet, feta, amandes effilées, persil, sauce moutarde</p><div class="alg"><span>Œufs</span><span>Lait</span><span>Fruits à coque</span><span>Moutarde</span></div></div></li>
+        <li class="plat avec-photo"><button type="button" class="plat-photo" data-src="visuels/curry-d-aubergines.jpg" aria-label="Voir la photo : Curry d'aubergines"><img src="visuels/curry-d-aubergines.jpg" alt="" loading="lazy"></button><div class="plat-corps"><div class="plat-ligne"><span class="plat-nom">Curry d'aubergines</span><span class="pointille"></span><span class="plat-prix">6,50</span></div><p class="plat-ing">Aubergines, amandes, gingembre, fromage blanc, curry, riz</p><div class="alg"><span>Lait</span><span>Fruits à coque</span></div></div></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ÉTAPES -->
+<section class="etapes wrap" id="comment">
+  <p class="eyebrow">Comment ça marche</p>
+  <h2 class="titre">On fait simple, <em>entre nous.</em></h2>
+  <div class="etapes-grid">
+    <div class="etape reveal">
+      <span class="n">D'abord</span>
+      <h3>Tu te présentes</h3>
+      <p>Le formulaire en bas de page : tes goûts, tes allergies, ton style alimentaire et le nombre de plats qu'il te faut.</p>
+    </div>
+    <div class="etape reveal">
+      <span class="n">Ensuite</span>
+      <h3>Je t'envoie les huit plats</h3>
+      <p>Chaque semaine je mets huit plats à l'honneur. Je les choisis moi-même, en tenant compte de tes goûts.</p>
+    </div>
+    <div class="etape reveal">
+      <span class="n">Puis</span>
+      <h3>Tu choisis les tiens</h3>
+      <p>Tu me confirmes, et je me mets aux fourneaux.</p>
+    </div>
+    <div class="etape reveal">
+      <span class="n">Enfin</span>
+      <h3>Tu récupères</h3>
+      <p>Samedi ou dimanche, à l'heure qui t'arrange, <a class="lien-map" href="https://www.google.com/maps/search/?api=1&amp;query=Rue+de+la+Concorde+31000+Toulouse">rue de la Concorde</a>, <a class="lien-map" href="https://www.google.com/maps/search/?api=1&amp;query=M%C3%A9tro+Jeanne+d%27Arc+Toulouse">à Jeanne-d'Arc</a> ou <a class="lien-map" href="https://www.google.com/maps/search/?api=1&amp;query=M%C3%A9tro+Jean+Jaur%C3%A8s+Toulouse">à Jean-Jaurès</a>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PREUVE -->
+<section class="preuve wrap">
+  <p class="eyebrow">Sans filtre</p>
+  <h2 class="titre">Toutes ces photos sortent <em>de ma cuisine.</em></h2>
+  <p class="chapo">Prises sur le plan de travail, avant que les bols partent. Je publie les suivantes sur Instagram, semaine après semaine.</p>
+  <div class="mosaique">
+    <a href="https://www.instagram.com/lacantinedelea/"><img src="visuels/curry-japonais.jpg" alt="Plat fait maison"></a>
+    <a href="https://www.instagram.com/lacantinedelea/"><img src="visuels/pad-thai-aux-crevettes.jpg" alt="Plat fait maison"></a>
+    <a href="https://www.instagram.com/lacantinedelea/"><img src="visuels/salade-patate-douce-feta.jpg" alt="Plat fait maison"></a>
+    <a href="https://www.instagram.com/lacantinedelea/"><img src="visuels/bowl-proteine-au-poulet.jpg" alt="Plat fait maison"></a>
+    <a href="https://www.instagram.com/lacantinedelea/"><img src="visuels/falafels-legumes-rotis.jpg" alt="Plat fait maison"></a>
+    <a href="https://www.instagram.com/lacantinedelea/"><img src="visuels/riz-cantonais-aux-crevettes.jpg" alt="Plat fait maison"></a>
+    <a href="https://www.instagram.com/lacantinedelea/"><img src="visuels/cannellonis-aux-epinards.jpg" alt="Plat fait maison"></a>
+    <a href="https://www.instagram.com/lacantinedelea/"><img src="visuels/filet-mignon-moutarde-miel.jpg" alt="Plat fait maison"></a>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="wrap">
+    <p class="eyebrow pale">Les questions qu'on me pose</p>
+    <h2 class="titre">Tout ce que tu veux <em>savoir.</em></h2>
+
+    <details>
+      <summary>Comment sont choisis les plats ?</summary>
+      <div class="rep"><p>C'est moi qui compose. Chaque semaine je mets <strong>huit plats à l'honneur</strong>, en fonction de la saison, du marché et de ce que tu m'as dit de tes goûts.</p>
+      <p>Tu reçois cette sélection par message. Tu n'as donc rien à commander à l'avance dans la carte : elle est là pour te montrer mon répertoire.</p></div>
+    </details>
+
+    <details>
+      <summary>Et si aucun des huit ne me convient ?</summary>
+      <div class="rep"><p>Dis-le-moi franchement. Je garde toujours un peu de marge, et si un plat du répertoire te tente vraiment, on regarde ensemble si je peux le glisser dans la semaine.</p></div>
+    </details>
+
+    <details>
+      <summary>Combien de temps ça se conserve ?</summary>
+      <div class="rep"><p>Quatre jours au réfrigérateur à partir du jour où tu les récupères. Chaque plat a son propre mode de congélation : je te donne les instructions de vive voix au moment où je te remets tes bols.</p>
+      <p>Si tu commandes pour toute la semaine, mets-en une partie au congélateur dès ton retour. Et en cas de doute, écris-moi : je te donne l'ordre de priorité, en commençant par ceux qui se gardent le moins longtemps.</p></div>
+    </details>
+
+    <details>
+      <summary>Comment je réchauffe ?</summary>
+      <div class="rep"><p>Directement dans le bol : il est recyclable et passe au micro-ondes, deux à trois minutes suffisent. Rien à transvaser, rien à laver. Les salades se mangent froides, évidemment.</p></div>
+    </details>
+
+    <details>
+      <summary>Y a-t-il un minimum de commande ?</summary>
+      <div class="rep"><p>Non. Tu peux n'en prendre qu'un pour goûter. La plupart des habitués prennent cinq plats, de quoi tenir la semaine. Midi ou soir, je t'aide à ne plus te prendre la tête et à aborder ta semaine sereinement.</p></div>
+    </details>
+
+    <details>
+      <summary>Jusqu'à quand je peux commander ?</summary>
+      <div class="rep"><p>Jusqu'au jeudi soir pour une récupération le week-end qui suit. Passé ce délai, je te garde une place pour la semaine d'après. Écris-moi quand même : s'il me reste de la marge, je m'arrange.</p></div>
+    </details>
+
+    <details>
+      <summary>Et si je suis allergique à quelque chose ?</summary>
+      <div class="rep"><p>Dis-le-moi dans ta commande, je vérifie chaque ingrédient avec toi avant de cuisiner. Les pastilles sous chaque plat signalent les allergènes principaux, mais une allergie sérieuse mérite qu'on en parle directement.</p></div>
+    </details>
+
+    <details>
+      <summary>Pourquoi un acompte ?</summary>
+      <div class="rep"><p>À partir de <strong>quatre plats</strong>, je te demande un acompte de <strong>10 % du total</strong> au moment où tu valides ta commande.</p>
+      <p>J'achète les ingrédients frais spécialement pour toi, en quantité, et je bloque un créneau de cuisine dans mon week-end. L'acompte me permet d'avancer ces courses sereinement.</p>
+      <p>Une fois qu'on a validé tes plats ensemble, je t'envoie le lien de paiement par message. Le reste se règle à la récupération.</p></div>
+    </details>
+
+    <details>
+      <summary>Et si je change d'avis sur ma commande ?</summary>
+      <div class="rep"><p>Si c'est pour <strong>ajouter</strong> des plats, aucun souci : écris-moi directement, je m'arrange.</p>
+      <p>Si c'est pour <strong>annuler</strong> des plats, l'acompte déjà versé reste acquis, mais tu n'as rien de plus à régler.</p></div>
+    </details>
+
+    <details>
+      <summary>Comment je règle ?</summary>
+      <div class="rep"><p>En espèces ou par virement, au moment où tu récupères tes plats. Rien à payer au moment de la commande : je te confirme d'abord le menu et le total par message.</p></div>
+    </details>
+  </div>
+</section>
+
+<!-- FORMULAIRE DE COMMANDE -->
+<section class="commande" id="commander">
+  <div class="wrap">
+    <p class="eyebrow">On se parle</p>
+    <h2 class="titre">Dis-moi ce que tu <em>aimes.</em></h2>
+    <p class="chapo">Tu n'as pas de plats à choisir ici : dis-moi simplement tes goûts et tes contraintes.</p>
+
+    <div class="form-grid">
+      <div class="form-carte">
+        <form id="form-commande" novalidate>
+          <div class="duo">
+            <div class="champ">
+              <label for="nom">Prénom et nom <span class="req">*</span></label>
+              <input type="text" id="nom" name="nom" required autocomplete="name">
+            </div>
+            <div class="champ">
+              <label for="email">Email <span class="req">*</span></label>
+              <input type="email" id="email" name="email" required autocomplete="email">
+            </div>
+          </div>
+
+          <div class="champ">
+            <label for="tel">Téléphone</label>
+            <input type="tel" id="tel" name="tel" autocomplete="tel">
+            <p class="aide">Pour caler l'heure de récupération le jour J.</p>
+          </div>
+
+          <div class="champ">
+            <label for="nb">Combien de plats te faut-il ? <span class="req">*</span></label>
+            <input type="number" id="nb" name="nb" min="1" step="1" inputmode="numeric" placeholder="Ex. : 5" required>
+            <p class="aide">Tu choisiras lesquels parmi les huit plats que je t'enverrai.</p>
+          </div>
+
+          <div class="champ">
+            <span class="legende">Ton style alimentaire</span>
+            <div class="choix">
+              <label><input type="radio" name="style" value="Rien de particulier" checked><span>Rien de particulier</span></label>
+              <label><input type="radio" name="style" value="Hyperprotéiné"><span>Hyperprotéiné</span></label>
+              <label><input type="radio" name="style" value="Végétarien"><span>Végétarien</span></label>
+              <label><input type="radio" name="style" value="Léger / perte de poids"><span>Léger</span></label>
+              <label><input type="radio" name="style" value="Prise de masse"><span>Prise de masse</span></label>
+              <label><input type="radio" name="style" value="Autre"><span>Autre</span></label>
+            </div>
+          </div>
+
+          <div class="champ">
+            <label for="allergies">Allergies</label>
+            <textarea id="allergies" name="allergies" placeholder="Ex. : fruits à coque, crustacés" style="min-height:70px"></textarea>
+            <p class="aide">Même une allergie légère : je préfère le savoir avant de cuisiner.</p>
+          </div>
+
+          <div class="champ">
+            <label for="restrictions">Ce que tu ne manges pas</label>
+            <textarea id="restrictions" name="restrictions" placeholder="Ex. : pas de porc, je déteste la coriandre, pas d'aubergine" style="min-height:70px"></textarea>
+          </div>
+
+          <div class="champ">
+            <label for="gouts">Ce que tu aimes</label>
+            <textarea id="gouts" name="gouts" placeholder="Ex. : les plats mijotés, l'asiatique, tout ce qui est épicé" style="min-height:70px"></textarea>
+            <p class="aide">Ça m'aide à composer les huit plats de la semaine.</p>
+          </div>
+
+          <div class="champ">
+            <span class="legende">Jour de récupération <span class="req">*</span></span>
+            <div class="choix">
+              <label><input type="radio" name="jour" value="Samedi" checked><span>Samedi</span></label>
+              <label><input type="radio" name="jour" value="Dimanche"><span>Dimanche</span></label>
+            </div>
+          </div>
+
+          <div class="champ">
+            <span class="legende">Point de retrait <span class="req">*</span></span>
+            <div class="choix">
+              <label><input type="radio" name="lieu" value="Rue de la Concorde" checked><span>Rue de la Concorde</span></label>
+              <label><input type="radio" name="lieu" value="Métro Jeanne-d'Arc"><span>Jeanne-d'Arc</span></label>
+              <label><input type="radio" name="lieu" value="Métro Jean-Jaurès"><span>Jean-Jaurès</span></label>
+            </div>
+            <p class="aide">Situer sur une carte :
+              <a class="lien-map" href="https://www.google.com/maps/search/?api=1&amp;query=Rue+de+la+Concorde+31000+Toulouse">Concorde</a> ·
+              <a class="lien-map" href="https://www.google.com/maps/search/?api=1&amp;query=M%C3%A9tro+Jeanne+d%27Arc+Toulouse">Jeanne-d'Arc</a> ·
+              <a class="lien-map" href="https://www.google.com/maps/search/?api=1&amp;query=M%C3%A9tro+Jean+Jaur%C3%A8s+Toulouse">Jean-Jaurès</a></p>
+          </div>
+
+          <div class="champ">
+            <label for="creneau">Créneau qui t'arrange</label>
+            <input type="text" id="creneau" name="creneau" placeholder="Ex. : samedi entre 11 h et 13 h">
+          </div>
+
+          <div class="champ">
+            <label for="message">Un mot pour Léa</label>
+            <textarea id="message" name="message" style="min-height:80px"></textarea>
+          </div>
+
+          <div class="recap">
+            <button type="submit" class="btn btn-curry envoi">Envoyer mon message à Léa</button>
+            <p class="mention">Pas de paiement en ligne, pas d'engagement. Juste un message.</p>
+          </div>
+        </form>
+
+        <div id="merci">
+          <div class="rond">✓</div>
+          <h3>C'est parti pour ta commande</h3>
+          <p>Ton message s'ouvre dans ta messagerie : il ne te reste qu'à l'envoyer. Léa te répond elle-même sous 24 h avec les huit plats de la semaine.</p>
+          <p class="relance">Rien ne s'est ouvert ? Écris directement à <a href="mailto:lacantinedelea@outlook.fr">lacantinedelea@outlook.fr</a> ou en message privé sur <a href="https://www.instagram.com/lacantinedelea/">@lacantinedelea</a>.</p>
+          <button type="button" class="btn btn-vert" id="refaire">Faire une autre commande</button>
+        </div>
+      </div>
+
+      <aside>
+        <div class="paiement">
+          <h3>Comment ça se passe ensuite</h3>
+          <p>Je te réponds avec <span class="cle">les huit plats de la semaine</span>. Tu choisis les tiens, je te confirme le total, et je cuisine.</p>
+          <p>Le règlement se fait <span class="cle">à la récupération</span>, en espèces ou par virement, au moment où je te donne tes bols. Rien à payer en ligne.</p>
+        </div>
+        <ul class="infos" style="border-color:#D8CFBB">
+          <li style="border-color:#D8CFBB"><span class="lab" style="color:var(--tomate)">Sélection</span><span class="val">Huit plats à l'honneur chaque semaine</span></li>
+          <li style="border-color:#D8CFBB"><span class="lab" style="color:var(--tomate)">Délai</span><span class="val">Commande jusqu'au jeudi soir pour le week-end suivant</span></li>
+          <li style="border-color:#D8CFBB"><span class="lab" style="color:var(--tomate)">Réponse</span><span class="val">Sous 24 h, par SMS</span></li>
+          <li style="border-color:#D8CFBB"><span class="lab" style="color:var(--tomate)">Conservation</span><span class="val">4 jours au frigo, ou au congélateur</span></li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-grid">
+    <div class="foot-col">
+      <span class="marque">La Cantine de <span>Léa</span></span>
+      <p>Une cuisine de famille, à Toulouse.<br>Tout est préparé à la main, par une seule personne.</p>
+    </div>
+
+    <div class="foot-col">
+      <p class="foot-tit">Où récupérer</p>
+      <p><a class="lien-map" href="https://www.google.com/maps/search/?api=1&amp;query=Rue+de+la+Concorde+31000+Toulouse">Rue de la Concorde<br>31000 Toulouse</a></p>
+      <p>Métros <a class="lien-map" href="https://www.google.com/maps/search/?api=1&amp;query=M%C3%A9tro+Jeanne+d%27Arc+Toulouse">Jeanne-d'Arc</a><br>et <a class="lien-map" href="https://www.google.com/maps/search/?api=1&amp;query=M%C3%A9tro+Jean+Jaur%C3%A8s+Toulouse">Jean-Jaurès</a></p>
+      <p class="mini-map">Tape une adresse pour l'ouvrir dans Maps</p>
+    </div>
+
+    <div class="foot-col">
+      <p class="foot-tit">Quand</p>
+      <p>Samedi et dimanche<br>à l'heure qui t'arrange</p>
+      <p>Commandes jusqu'au jeudi soir</p>
+    </div>
+
+    <div class="foot-col">
+      <p class="foot-tit">Me joindre</p>
+      <div class="socials">
+        <a class="social" href="https://www.instagram.com/lacantinedelea/" aria-label="Instagram de La Cantine de Léa">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5.2"/><circle cx="12" cy="12" r="4.1"/><circle cx="17.4" cy="6.6" r="1.25" class="plein"/></svg>
+        </a>
+        <a class="social" href="mailto:lacantinedelea@outlook.fr" aria-label="Écrire un mail à Léa">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="5" width="19" height="14" rx="2.4"/><path d="M3 7l9 6.2L21 7"/></svg>
+        </a>
+      </div>
+      <p><a href="mailto:lacantinedelea@outlook.fr">lacantinedelea@outlook.fr</a><br><a href="https://www.instagram.com/lacantinedelea/">@lacantinedelea</a></p>
+
+      <p class="foot-tit" style="margin-top:26px">Faire passer le mot</p>
+      <div class="partage">
+        <button type="button" class="part-btn" id="part-wa">WhatsApp</button>
+        <button type="button" class="part-btn" id="part-copie">Copier le lien</button>
+        <button type="button" class="part-btn" id="part-natif" hidden>Partager</button>
+      </div>
+      <p class="part-retour" id="part-retour" hidden>Lien copié</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="appli" id="appli">
+      <img src="icons/icon-192.png" alt="" width="64" height="64" class="appli-ico">
+      <div class="appli-txt">
+        <p class="foot-tit" style="margin-bottom:6px !important">L'appli sur ton téléphone</p>
+        <p>Ajoute La Cantine sur ton écran d'accueil : elle s'ouvre en un geste, comme une vraie application.</p>
+      </div>
+      <div class="appli-btns">
+        <button type="button" class="btn-app" id="app-ios" data-os="ios">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.9-3-.8-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.5-1-2.5-3.8zM14.1 5.8c.6-.8 1.1-1.9 1-3-.9 0-2.1.6-2.7 1.4-.6.7-1.1 1.8-1 2.9 1 .1 2.1-.5 2.7-1.3z"/></svg>
+          <span>Sur iPhone</span>
+        </button>
+        <button type="button" class="btn-app" id="app-android" data-os="android">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.2 9.2h9.6c.4 0 .7.3.7.7v6.9c0 .4-.3.7-.7.7h-.9v2.4c0 .6-.5 1.1-1.1 1.1s-1.1-.5-1.1-1.1v-2.4h-3.4v2.4c0 .6-.5 1.1-1.1 1.1s-1.1-.5-1.1-1.1v-2.4h-.9c-.4 0-.7-.3-.7-.7V9.9c0-.4.3-.7.7-.7zM4.6 9.2c.6 0 1.1.5 1.1 1.1v4.8c0 .6-.5 1.1-1.1 1.1s-1.1-.5-1.1-1.1v-4.8c0-.6.5-1.1 1.1-1.1zm14.8 0c.6 0 1.1.5 1.1 1.1v4.8c0 .6-.5 1.1-1.1 1.1s-1.1-.5-1.1-1.1v-4.8c0-.6.5-1.1 1.1-1.1zM15.3 4.3l1-1.5c.1-.1 0-.3-.1-.3-.1-.1-.3 0-.3.1l-1 1.5C14 3.7 13 3.5 12 3.5s-2 .2-2.9.6l-1-1.5c-.1-.1-.2-.2-.3-.1-.1 0-.2.2-.1.3l1 1.5C7.3 5 6.5 6.4 6.5 8h11c0-1.6-.8-3-2.2-3.7zM9.5 6.5c-.3 0-.6-.3-.6-.6s.3-.6.6-.6.6.3.6.6-.3.6-.6.6zm5 0c-.3 0-.6-.3-.6-.6s.3-.6.6-.6.6.3.6.6-.3.6-.6.6z"/></svg>
+          <span>Sur Android</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="wrap foot-bas">
+    <span>© La Cantine de Léa</span>
+    <button type="button" class="lien-legal" id="ouvrir-legal">Mentions légales &amp; données personnelles</button>
+  </div>
+</footer>
+
+
+
+<div class="voile-legal" id="voile-legal"></div>
+<div class="legal" id="legal" role="dialog" aria-modal="true" aria-label="Mentions légales">
+  <div class="legal-tete">
+    <h3>Mentions légales</h3>
+    <button class="fermer" id="fermer-legal" type="button" aria-label="Fermer">&times;</button>
+  </div>
+  <div class="legal-corps">
+    <p class="avert">Bloc à compléter par Léa avant la mise en ligne. Les champs entre crochets attendent ses informations réelles.</p>
+
+    <h4>Éditeur du site</h4>
+    <p>La Cantine de Léa — [prénom et nom complet]<br>
+    [adresse du siège d'activité]<br>
+    lacantinedelea@outlook.fr</p>
+
+    <h4>Statut et immatriculation</h4>
+    <p>[Statut juridique, par exemple : micro-entreprise]<br>
+    SIRET : [numéro à 14 chiffres]<br>
+    Code APE : [code]<br>
+    TVA non applicable, article 293 B du CGI [à supprimer si non concerné]</p>
+
+    <h4>Activité et sécurité alimentaire</h4>
+    <p>Activité de préparation de plats à emporter, déclarée auprès de la Direction départementale de la protection des populations de la Haute-Garonne le [date].<br>
+    Les plats sont cuisinés en cuisine domestique. Ils se conservent quatre jours au réfrigérateur et doivent être maintenus au froid après retrait.</p>
+
+    <h4>Hébergement</h4>
+    <p>[Nom de l'hébergeur]<br>[adresse de l'hébergeur]</p>
+
+    <h4>Données personnelles</h4>
+    <p>Les informations saisies dans le formulaire de commande — nom, adresse électronique, téléphone, préférences alimentaires — servent uniquement à préparer et à remettre la commande. Elles ne sont ni revendues, ni transmises à un tiers, ni utilisées à des fins publicitaires.</p>
+    <p>Elles sont conservées le temps nécessaire au suivi de la commande, puis [durée, par exemple : douze mois]. Conformément au règlement général sur la protection des données, chacun peut demander à consulter, corriger ou supprimer ses informations en écrivant à lacantinedelea@outlook.fr.</p>
+    <p>Ce site ne dépose aucun cookie de mesure d'audience ni de publicité.</p>
+
+    <h4>Allergènes</h4>
+    <p>Les allergènes signalés sous chaque plat sont indicatifs. Les préparations sont réalisées dans une cuisine où sont manipulés gluten, œufs, lait, poisson, crustacés, soja, sésame et fruits à coque : la présence de traces ne peut être exclue. En cas d'allergie, signalez-le avant toute commande.</p>
+
+    <h4>Propriété intellectuelle</h4>
+    <p>Les textes, photographies et recettes présentés sur ce site appartiennent à leur autrice et ne peuvent être repris sans accord préalable.</p>
+  </div>
+</div>
+
+
+<div class="voile-legal" id="voile-app"></div>
+<div class="legal fen-app" id="fen-app" role="dialog" aria-modal="true" aria-labelledby="fen-app-titre">
+  <div class="legal-tete">
+    <h3 id="fen-app-titre">Installer l'appli</h3>
+    <button class="fermer" id="fermer-app" type="button" aria-label="Fermer">&times;</button>
+  </div>
+  <div class="legal-corps">
+    <div class="fen-app-logo"><img src="icons/icon-192.png" alt="" width="72" height="72"><span>La Cantine</span></div>
+
+    <div id="etapes-ios">
+      <p class="fen-app-intro">Sur iPhone, ça se passe dans <strong>Safari</strong>. Trois gestes :</p>
+      <ol class="pas">
+        <li><span class="num">1</span><p>Touche le bouton <strong>Partager</strong>
+          <svg class="ico-inline" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7.5 7.5L12 3l4.5 4.5M6 11H5v10h14V11h-1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          en bas de l'écran. Sur les iPhone récents, il est dans le menu <strong>···</strong></p></li>
+        <li><span class="num">2</span><p>Fais défiler et choisis <strong>Sur l'écran d'accueil</strong></p></li>
+        <li><span class="num">3</span><p>Touche <strong>Ajouter</strong> en haut à droite. L'icône apparaît avec tes autres applis.</p></li>
+      </ol>
+      <p class="fen-app-note">Tu es sur Chrome ou dans Instagram ? Ouvre d'abord cette page dans Safari.</p>
+    </div>
+
+    <div id="etapes-android">
+      <p class="fen-app-intro">Sur Android, ça se passe dans <strong>Chrome</strong>. Deux gestes :</p>
+      <ol class="pas">
+        <li><span class="num">1</span><p>Touche le menu <strong>⋮</strong> en haut à droite</p></li>
+        <li><span class="num">2</span><p>Choisis <strong>Installer l'application</strong> ou <strong>Ajouter à l'écran d'accueil</strong>, puis confirme.</p></li>
+      </ol>
+      <p class="fen-app-note">Tu es dans Instagram ou WhatsApp ? Ouvre d'abord cette page dans Chrome.</p>
+    </div>
+  </div>
+</div>
+
+<div class="visionneuse" id="visionneuse" role="dialog" aria-modal="true" aria-label="Photo du plat">
+  <button type="button" class="fermer-vis" id="fermer-vis" aria-label="Fermer">&times;</button>
+  <img id="vis-img" src="" alt="">
+  <p id="vis-nom"></p>
+</div>
+<div class="mobile-cta">
+  <a class="btn btn-curry" href="#commander">Écrire à Léa</a>
+</div>
+
+<script>
+document.querySelectorAll('.tab').forEach(function(t){
+  t.addEventListener('click', function(){
+    document.querySelectorAll('.tab').forEach(function(x){ x.setAttribute('aria-selected','false'); });
+    t.setAttribute('aria-selected','true');
+    document.querySelectorAll('.panneau').forEach(function(p){ p.hidden = true; });
+    document.getElementById(t.dataset.cible).hidden = false;
+  });
+});
+
+/* ---------- menu déroulant ---------- */
+(function(){
+  var b=document.getElementById('burger'), m=document.getElementById('deroulant');
+  var v=document.getElementById('voile-menu');
+  function etat(o){
+    m.classList.toggle('ouvert',o);
+    v.classList.toggle('ouvert',o);
+    b.classList.toggle('ouvert',o);
+    b.setAttribute('aria-expanded',o?'true':'false');
+    m.setAttribute('aria-hidden',o?'false':'true');
+    document.body.style.overflow = o ? 'hidden' : '';
+  }
+  v.addEventListener('click',function(){etat(false);});
+  document.getElementById('fermer-menu').addEventListener('click',function(){etat(false);});
+  b.addEventListener('click',function(e){
+    e.stopPropagation();
+    etat(!m.classList.contains('ouvert'));
+  });
+  m.querySelectorAll('a').forEach(function(a){ a.addEventListener('click',function(){etat(false);}); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') etat(false); });
+})();
+
+/* ---------- visionneuse photos ---------- */
+(function(){
+  var v=document.getElementById('visionneuse'), im=document.getElementById('vis-img'), nm=document.getElementById('vis-nom');
+  function fermer(){ v.classList.remove('ouvert'); document.body.style.overflow=''; }
+  document.querySelectorAll('.plat-photo').forEach(function(b){
+    b.addEventListener('click',function(){
+      im.src=b.getAttribute('data-src');
+      nm.textContent=b.closest('.plat').querySelector('.plat-nom').textContent;
+      v.classList.add('ouvert'); document.body.style.overflow='hidden';
+    });
+  });
+  v.addEventListener('click',function(e){ if(e.target!==im) fermer(); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') fermer(); });
+})();
+
+/* ---------- installation de l'appli ---------- */
+(function(){
+  var ua = navigator.userAgent || '';
+  var estIOS = /iPad|iPhone|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  var estAndroid = /Android/i.test(ua);
+  var dejaInstallee = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+
+  var bande = document.getElementById('appli'), entree = document.getElementById('menu-appli');
+  if (dejaInstallee) { bande.classList.add('installee'); entree.classList.add('installee'); }
+  if (estIOS) document.getElementById('app-ios').classList.add('moi');
+  if (estAndroid) document.getElementById('app-android').classList.add('moi');
+
+  var invite = null;
+  window.addEventListener('beforeinstallprompt', function(e){ e.preventDefault(); invite = e; });
+  window.addEventListener('appinstalled', function(){ bande.classList.add('installee'); entree.classList.add('installee'); });
+
+  var voile = document.getElementById('voile-app'), fen = document.getElementById('fen-app');
+  function ouvrir(os){
+    document.getElementById('etapes-ios').style.display = os === 'ios' ? 'block' : 'none';
+    document.getElementById('etapes-android').style.display = os === 'android' ? 'block' : 'none';
+    fen.classList.add('ouvert'); voile.classList.add('ouvert');
+    document.body.style.overflow = 'hidden';
+  }
+  function fermer(){ fen.classList.remove('ouvert'); voile.classList.remove('ouvert'); document.body.style.overflow = ''; }
+
+  function installer(os){
+    if (os === 'android' && invite) {
+      invite.prompt();
+      invite.userChoice.finally(function(){ invite = null; });
+      return;
+    }
+    ouvrir(os);
+  }
+  document.getElementById('app-ios').addEventListener('click', function(){ installer('ios'); });
+  document.getElementById('app-android').addEventListener('click', function(){ installer('android'); });
+  entree.addEventListener('click', function(){
+    var b = document.getElementById('burger');
+    if (b && b.classList.contains('ouvert')) b.click();
+    installer(estIOS ? 'ios' : 'android');
+  });
+  document.getElementById('fermer-app').addEventListener('click', fermer);
+  voile.addEventListener('click', fermer);
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') fermer(); });
+
+  if ('serviceWorker' in navigator && location.protocol.indexOf('http') === 0) {
+    window.addEventListener('load', function(){ navigator.serviceWorker.register('sw.js').catch(function(){}); });
+  }
+})();
+
+/* ---------- partage & mentions légales ---------- */
+(function(){
+  var url=location.href, msg="La Cantine de Léa — des plats faits maison à récupérer le week-end à Toulouse : ";
+  document.getElementById('part-wa').addEventListener('click',function(){
+    window.open('https://wa.me/?text='+encodeURIComponent(msg+url),'_blank');
+  });
+  var retour=document.getElementById('part-retour');
+  document.getElementById('part-copie').addEventListener('click',function(){
+    function ok(){ retour.hidden=false; setTimeout(function(){retour.hidden=true;},2200); }
+    if(navigator.clipboard){ navigator.clipboard.writeText(url).then(ok,ok); }
+    else {
+      var z=document.createElement('textarea'); z.value=url; document.body.appendChild(z);
+      z.select(); try{document.execCommand('copy');}catch(e){} document.body.removeChild(z); ok();
+    }
+  });
+  var natif=document.getElementById('part-natif');
+  if(navigator.share){
+    natif.hidden=false;
+    natif.addEventListener('click',function(){
+      navigator.share({title:'La Cantine de Léa',text:msg,url:url}).catch(function(){});
+    });
+  }
+
+  var vl=document.getElementById('voile-legal'), lg=document.getElementById('legal');
+  function etatL(o){
+    lg.classList.toggle('ouvert',o); vl.classList.toggle('ouvert',o);
+    document.body.style.overflow = o ? 'hidden' : '';
+  }
+  document.getElementById('ouvrir-legal').addEventListener('click',function(){etatL(true);});
+  document.getElementById('fermer-legal').addEventListener('click',function(){etatL(false);});
+  vl.addEventListener('click',function(){etatL(false);});
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') etatL(false); });
+})();
+
+document.getElementById('form-commande').addEventListener('submit', function(e){
+  e.preventDefault();
+  var f = e.target;
+  var get = function(n){ var el = f.elements[n]; return el ? (el.value || '').trim() : ''; };
+  var coche = function(n){ var el = f.querySelector('input[name="'+n+'"]:checked'); return el ? el.value : ''; };
+  if(!get('nom') || !get('email') || !get('nb')){
+    alert('Il manque ton nom, ton email ou le nombre de plats.');
+    return;
+  }
+  var corps = [
+    'Nom : ' + get('nom'),
+    'Email : ' + get('email'),
+    'Téléphone : ' + (get('tel') || '—'),
+    '',
+    'Nombre de plats : ' + get('nb'),
+    'Style alimentaire : ' + coche('style'),
+    'Allergies : ' + (get('allergies') || 'aucune'),
+    'Ne mange pas : ' + (get('restrictions') || '—'),
+    'Aime : ' + (get('gouts') || '—'),
+    '',
+    'Récupération : ' + coche('jour') + ' — ' + coche('lieu'),
+    'Créneau : ' + (get('creneau') || 'à convenir'),
+    '',
+    'Message : ' + (get('message') || '—')
+  ].join('\n');
+  window.location.href = 'mailto:lacantinedelea@outlook.fr'
+    + '?subject=' + encodeURIComponent('Commande — ' + get('nom'))
+    + '&body=' + encodeURIComponent(corps);
+
+  var carte=f.parentNode, merci=document.getElementById('merci');
+  setTimeout(function(){
+    f.style.display='none';
+    merci.style.display='block';
+    carte.scrollIntoView({behavior:'smooth',block:'center'});
+  },600);
+});
+
+document.getElementById('refaire').addEventListener('click',function(){
+  document.getElementById('merci').style.display='none';
+  document.getElementById('form-commande').style.display='block';
+});
+
+var io = new IntersectionObserver(function(entries){
+  entries.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('vu'); io.unobserve(e.target); } });
+},{threshold:.14});
+document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+</script>
+</body>
+</html>
